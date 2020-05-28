@@ -1,0 +1,112 @@
+ 
+    <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+                <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+                <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+                <style>
+                    body {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    html, body, #mapid {
+                        height: 100%;
+                        width: 100%;
+                    }
+                </style>
+                
+            </head>
+            <body>
+                <div id="mapid"></div>
+                <script>
+                    var data = L.layerGroup()
+                
+                    m = L.marker([-31.9530044, 115.85746930000005])
+                        
+                    m.on('click', function(e){
+                        mymap.setView([-31.9530044, 115.85746930000005], 19); 
+                    })
+                        
+                    m.bindPopup("<b>When everytime we show you an intro of TFA, many people ask me: Where is the place that intro background took place on? (alts: [Soulful indie band Bon Iver named a song after this (https://www.youtube.com/watch?v=c3GN9CqxKAY) Australian state capital, the most isolated city in this country.] and [When all of winerror took place on?])</b><br />The answer is: [WS01, Whatever you want is put on here, JUNK], [Computer01, rendered from cmdgfx and Python, runs on vps provider in this area that have no ad metadata. VP6 Tech, servers made entirely in Go, C, C++], [Stream01.ws01.co], [use1q3t12tq9e0jg032jhg923j0y932j0923456789abergj31t23qge2oigjn23igj3q20p9tu120t St.], [idontcareabout251231251351241212094j102cj4012jc40cj390j3209gj3209jg2309jg0392jg90012r12r-fsajv-0eqjbg-320jt-023jt-032jg2 Tce.], [Your Hitch Here], [New Place 001], Perth, Western Australia, Australia<br /><br /> Hint: Only Honolulu, Hawaii to San Francisco, California is very isolated than this route. The nearest city from this city is U1, While SYD is actually farther than CGK or Bali, it is a gateway for Indonesia to visit Australia. Bands like Birds of Tokyo, which appears countrywide, and Tame Impala, which also appears countrywide, but appears everywhere, are just a few of the many to 'blip' out of(help shaped) this place. Feel free to contact this bands to book the live performance respectively. Possibly, naming you 'blip' will say i'm so lonely. What's more interesting is WS06, the new WS01, and her grandma aussie friends live here. CRE ads first started in the west of the city, moving to south, to west again, to the center of the city, then leave (https://tpc.googlesyndication.com/daca_images/simgad/14482891722423022850)/(https://www.commercialrealestate.com.au/property/12027454?gclid=EAIaIQobChMIqtHb0p_s5AIVzUwrCh17IQqbEAEYASAAEgLKDfD_BwE), except the broker still live in this city (Some ads goes too far to Darwin, NT, etc.). See (https://www.commercialrealestate.com.au/real-estate-agents/19765) /* for start */, (https://www.commercialrealestate.com.au/real-estate-agents/19762), (https://www.commercialrealestate.com.au/real-estate-agents/25388), (https://www.commercialrealestate.com.au/real-estate-agents/19726) /* for south wp ads */, (https://www.commercialrealestate.com.au/real-estate-agents/14999), and (https://www.commercialrealestate.com.au/real-estate-agents/19845) /* for collin street */ (https://www.commercialrealestate.com.au/real-estate-agents/19767) /* aaa */, then return (https://tpc.googlesyndication.com/daca_images/simgad/15496423520327916333)/(https://www.commercialrealestate.com.au/property/2015679760?gclid=EAIaIQobChMI4uSj8LyB5QIVCoZwCh0XswWeEAEYASAAEgKyDfD_BwE), (https://tpc.googlesyndication.com/daca_images/simgad/8563080393518617741)/(https://www.commercialrealestate.com.au/property/2015687522?gclid=EAIaIQobChMIhv3EgOiH5QIVzIFwCh3G6QJLEAEYASAAEgKIo_D_BwE), spreading to (https://tpc.googlesyndication.com/daca_images/simgad/6403367805327213179)/(https://www.commercialrealestate.com.au/property/13221973?gclid=EAIaIQobChMI28_NlcyB5QIVlIJwCh3ySA_yEAEYASAAEgJvGPD_BwE) in (streams.m3u8), (https://tpc.googlesyndication.com/daca_images/simgad/5848119219791874907)/(https://www.commercialrealestate.com.au/property/13543362?gclid=EAIaIQobChMIz47vm--G5QIVzUwrCh2EjgkqEAEYASAAEgJDX_D_BwE), and (https://tpc.googlesyndication.com/daca_images/simgad/12844082384376633620)/(https://www.commercialrealestate.com.au/property/2015397782?gclid=EAIaIQobChMIoK-YufSE5QIV6BS3AB1X9QMXEAEYASAAEgIk0_D_BwE). Reference (https://www.commercialrealestate.com.au/real-estate-agents/19670). Some foreign broker do this. It has OPSM ads, which i make in one video (and yes it is linked to Akamai EdgeKey and trying to access with curl will give the Access Denied error. dump: Access Denied You don't have permission to access \"[no URL]\" on this server (same via https://www.microsoft.com/AK_PM_VPATH%d/unknown.mspx (server: AkamaiGHost) (others run their failover using Amazon S3's competitor: Akamai NetStorage (server: AkamaiNetStorage))). and it also has Domino Pizza ads. But that ad also appear on Indonesia via AppNexus Singapore (https://sin1-ib.adnxs.com) VPAID Video Ads. It's not the same as that ad, but it also appears on some websites, like Eurogamer. VPAID means Video Player Ad Interface Definition. They used it on tons of video players, like video.js. VPAID can also be used in banner ads. If you move that map to south, you get Bonds, Michael Hill ads because of Carousel is a thing in the 06 world. It is being used as a pop in WS01 server configuration with rDNS: per01-6xxx-svc01-u6.services.ws01community.net,stockton01-6xxx-svc01-u6.services.ws01community.net, d1-lh.s01usercontent.net, arpa-riverton-to-grp-01.reverse.ws01co.net, arpa-per01-to-grp-01.reverse.ws01co.net, arpa-sell01-to-grp-01.reverse.ws01co.net, stream.ws01.co, originserver1.ws01.co, soulful.ws01.co, dev.ws01.co, and apa01.ws01.co, running onhttpd codename soulful (next codename: restful). It also has origin.ws01co.net, used in gofags the story 1 with WEST IS THE BEST, Server: onhttpd2........... 404 Not Found - onhttpd2. Used in Too Many Adverts: What's wrong with ads, while Authy is opening the door to look outside to be scared for ads. because even on WS01 servers near grandma homes, Flight Centre Riverton (address: -32.040183,115.905222) is to be appear soon. Forked from the sources of openresty, the new long HTTP server called sohttpd was new to us. Many scripts in WS01's version of CmdGfx referenced this city. and Soulful is currently a codename for all WS01 software as of 2020. Now fork the Dropbear (a popular SSH VPN server) RIGHT NOW...<br /><br /> Standard question<br /><br /> Appears in region: en-AU").addTo(data)
+                        
+                    L.polygon([[-14.588369140704174, 148.23051617500005], [-38.08340028682803,148.23051617500005], [-38.08340028682803,111.78520367500005], [-14.588369140704174,111.78520367500005]]).bindPopup("Region boundary").addTo(data)
+
+                    c = L.circle([-31.9530044, 115.85746930000005], 59118.612705341504, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c.on('click', function(e){
+                        mymap.setView([-31.9530044, 115.85746930000005], 15);
+                    })
+
+                    c.bindPopup("Answer range").addTo(data)
+
+                    mapboxattr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' + '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+
+                    gmapsattr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' + '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="https://maps.google.com/">Google Maps</a>'
+
+                    normal = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                        maxZoom: 21,
+                        attribution: mapboxattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 512,
+                        zoomOffset: -1
+                    })
+
+                    satellite = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                        maxZoom: 21,
+                        attribution: mapboxattr,
+                        id: 'user12435235124125235824592457/ckanekpxi1o3y1ipkm8tl6v3i',
+                        tileSize: 512,
+                        zoomOffset: -1
+                    })
+
+                    gmapsnormal = L.tileLayer('https://www.google.com/maps/vt?pb=!1m4!1m3!1i{z}!2i{x}!3i{y}!2m2!2sm!3i504221335!3m7!2sen-US!5i1105!12m4!1i68!2m2!1sset!2sTerrain!5m1!5f4.0!23i1358902', {
+                        maxZoom: 21,
+                        attribution: gmapsattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 256,
+                        zoomOffset: 0
+                    })
+
+                    gmapssatellite = L.tileLayer('https://mt{s}.googleapis.com/vt?lyrs=y&hl=en-US&x={x}&y={y}&z={z}', {
+                        maxZoom: 21,
+                        attribution: gmapsattr,
+                        id: 'user12435235124125235824592457/ckanekpxi1o3y1ipkm8tl6v3i',
+                        tileSize: 256,
+                        zoomOffset: 0,
+                        subdomains: ["0", "1", "2", "3"]
+                    })
+
+                    var mymap = L.map('mapid', {
+                        center: [0.0, 0.0],
+                        zoom: 15,
+                        layers: [normal, data]
+                    })
+
+                    var l1 = L.latLng(-14.588369140704174, 148.23051617500005)
+                    var l2 = L.latLng(-38.08340028682803, 111.78520367500005)
+                    bounds = L.latLngBounds(l1, l2)
+                    mymap.panTo(bounds.getCenter())
+                    mymap.fitBounds(bounds)
+                    mymap.setZoom(mymap.getZoom() + 1)
+
+                    var layernames = {
+                        "Mapbox Normal": normal,
+                        "Google Maps Normal": gmapsnormal,
+                        "Mapbox Satellite": satellite,
+                        "Google Maps Satellite": gmapssatellite
+                    }
+                    
+                    var dataset = {
+                        "Smarty Pins data": data
+                    }
+                
+                    layers = L.control.layers(layernames, dataset)
+                    layers.addTo(mymap)		
+                </script>
+            </body>
+        </html>
+    

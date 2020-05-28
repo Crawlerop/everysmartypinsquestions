@@ -1,0 +1,112 @@
+ 
+    <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+                <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+                <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+                <style>
+                    body {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    html, body, #mapid {
+                        height: 100%;
+                        width: 100%;
+                    }
+                </style>
+                
+            </head>
+            <body>
+                <div id="mapid"></div>
+                <script>
+                    var data = L.layerGroup()
+                
+                    m = L.marker([-8.65, 115.21666670000002])
+                        
+                    m.on('click', function(e){
+                        mymap.setView([-8.65, 115.21666670000002], 19); 
+                    })
+                        
+                    m.bindPopup("<b>This is me, WS01 as of December 2019. What is this capital of this island? (alts: This city is the capital of the Indonesian island of Bali., and Their names... We are deploing the trip to bali, Their adventures. Come on, bud, let's play watersports. Their worlds. wow, this is the best place ever.)</b><br />The answer is: Denpasar, Bali, Indonesia<br /><br /> Hint: The Trip to Bali: where it's start here, created by The Sunset Pictures, Directed by X family, Cam gear by WS01. It's airport (Kuta, seen after taking the exit to kuta on toll.) is busy with any students that called Aussies (whatever grade 6 primary or in secondary classes), hens or roosters, and honeymooners. This city is notorious for Bule peoples. Bule stands for orang asing(foreign people.) To west (this borders with Kuta), there is Kuta Beach, Legian (which is Amaris and Tauzia POP hotels (first, last respectively) ) is some km ahead from this city, To south, there is Sanur. thanks, I will revisit to bali in some years now. This thing formed The Sunset Pictures. There's 2 way to get there, 1: the Airport method. Pros: close to Kuta hotels and the Beach. Cons: It's too expensive, cannot bring your own car. 2: the Ferry method. Pros: It's cheap, can bring your own car, can do more while in ferry. Cons: if you missed a ferry, you have to wait for another 1 hours for this ferry to come. Distance is very long (mainly from SBY to Ketapang Ferry, and Gilimanuk Ferry to this city, and vice versa. Thankfully in SBY, there is a hotels such as MaxONE Hotels and faveHotel MEX to rest you.) See you soon on 2020 Bali trip on PLTVVVVVVVVV. rDNS: suns01-global-apac.services.ws01community.net, 2020balitrip.ws01co.net and dnps01-global-apac.services.ws01community.net, spsd.ws01.co, sb1.ws01.co, unplugged.ws01.co<br /><br /> Standard question<br /><br /> Appears in region: en-AU").addTo(data)
+                        
+                    L.polygon([[0.5492296864078424, 126.2322916999999], [-16.008096517774963,126.2322916999999], [-16.008096517774963,104.55260420000002], [0.5492296864078424,104.55260420000002]]).bindPopup("Region boundary").addTo(data)
+
+                    c = L.circle([-8.65, 115.21666670000002], 36282.4449955679, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c.on('click', function(e){
+                        mymap.setView([-8.65, 115.21666670000002], 15);
+                    })
+
+                    c.bindPopup("Answer range").addTo(data)
+
+                    mapboxattr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' + '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+
+                    gmapsattr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' + '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="https://maps.google.com/">Google Maps</a>'
+
+                    normal = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                        maxZoom: 21,
+                        attribution: mapboxattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 512,
+                        zoomOffset: -1
+                    })
+
+                    satellite = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                        maxZoom: 21,
+                        attribution: mapboxattr,
+                        id: 'user12435235124125235824592457/ckanekpxi1o3y1ipkm8tl6v3i',
+                        tileSize: 512,
+                        zoomOffset: -1
+                    })
+
+                    gmapsnormal = L.tileLayer('https://www.google.com/maps/vt?pb=!1m4!1m3!1i{z}!2i{x}!3i{y}!2m2!2sm!3i504221335!3m7!2sen-US!5i1105!12m4!1i68!2m2!1sset!2sTerrain!5m1!5f4.0!23i1358902', {
+                        maxZoom: 21,
+                        attribution: gmapsattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 256,
+                        zoomOffset: 0
+                    })
+
+                    gmapssatellite = L.tileLayer('https://mt{s}.googleapis.com/vt?lyrs=y&hl=en-US&x={x}&y={y}&z={z}', {
+                        maxZoom: 21,
+                        attribution: gmapsattr,
+                        id: 'user12435235124125235824592457/ckanekpxi1o3y1ipkm8tl6v3i',
+                        tileSize: 256,
+                        zoomOffset: 0,
+                        subdomains: ["0", "1", "2", "3"]
+                    })
+
+                    var mymap = L.map('mapid', {
+                        center: [0.0, 0.0],
+                        zoom: 15,
+                        layers: [normal, data]
+                    })
+
+                    var l1 = L.latLng(0.5492296864078424, 126.2322916999999)
+                    var l2 = L.latLng(-16.008096517774963, 104.55260420000002)
+                    bounds = L.latLngBounds(l1, l2)
+                    mymap.panTo(bounds.getCenter())
+                    mymap.fitBounds(bounds)
+                    mymap.setZoom(mymap.getZoom() + 1)
+
+                    var layernames = {
+                        "Mapbox Normal": normal,
+                        "Google Maps Normal": gmapsnormal,
+                        "Mapbox Satellite": satellite,
+                        "Google Maps Satellite": gmapssatellite
+                    }
+                    
+                    var dataset = {
+                        "Smarty Pins data": data
+                    }
+                
+                    layers = L.control.layers(layernames, dataset)
+                    layers.addTo(mymap)		
+                </script>
+            </body>
+        </html>
+    

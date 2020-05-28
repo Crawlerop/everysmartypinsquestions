@@ -1,0 +1,112 @@
+ 
+    <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+                <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+                <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+                <style>
+                    body {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    html, body, #mapid {
+                        height: 100%;
+                        width: 100%;
+                    }
+                </style>
+                
+            </head>
+            <body>
+                <div id="mapid"></div>
+                <script>
+                    var data = L.layerGroup()
+                
+                    m = L.marker([-6.17511, 106.86503949999997])
+                        
+                    m.on('click', function(e){
+                        mymap.setView([-6.17511, 106.86503949999997], 19); 
+                    })
+                        
+                    m.bindPopup("<b>When we start the Smarty, born to this day is the ASEAN. This is the used form of all time that is the special one, but what is the capital of this previously mentioned org [ASEAN]?</b><br />The answer is: [KMKLabs, SCTV Tower, Senayan City,] Jakarta, Indonesia<br /><br /> Hint: As of 2020, It is run via PSI, with more traffic whatsoever. Since then, there is a lot of troubles, first, this causes traffic jam and overcrouding, second most people wouldn't be able to go to some places due to odd even system (example: if not dividable by 2, you car is odd, and you cannot enter). rDNS: f609-server1-cgk01-global-apac.services.ws01community.net -> main01.awsmppl.com (182.30.*.*), cbtp-cgk01-global-apac.services.ws01community.net -> server01.ws01co.net (202.83.123.*) -> n.cbtp.info, cisco-routers-fm-cgk01-global-apac.services.ws01community.net -> fm01-a.nerdpool.ovh (139.195.*.*) fm-dyn-139-195-*-*.fast.net.id, f609-server2-cgk01-global-apac.services.ws01community.net -> backup02.awsmppl.com (180.250.*.*) *.subnet180-250-*.astinet/speedy.telkom.net.id,mr-huaweirouter-cgk01-global-apac.services.ws01community.net -> server02.ws01co.net (103.47.*.*) host-103-47-*-*.myrepublic.co.id, aliyun-cgk01-global-apac.services.ws01community.net -> aliyun01.ws01co.net (149.129.[192-255].*) onhttpd-servers-cgk-aliyun.reverse.ws01co.net, tg01-a.ws01.co, and dynip1.ws01.co<br /><br /> Standard question<br /><br /> Appears in region: en-AU").addTo(data)
+                        
+                    L.polygon([[3.19989, 125.61503949999997], [-15.55011,125.61503949999997], [-15.55011,88.11503949999997], [3.19989,88.11503949999997]]).bindPopup("Region boundary").addTo(data)
+
+                    c = L.circle([-6.17511, 106.86503949999997], 15040.659840162773, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c.on('click', function(e){
+                        mymap.setView([-6.17511, 106.86503949999997], 15);
+                    })
+
+                    c.bindPopup("Answer range").addTo(data)
+
+                    mapboxattr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' + '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+
+                    gmapsattr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' + '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="https://maps.google.com/">Google Maps</a>'
+
+                    normal = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                        maxZoom: 21,
+                        attribution: mapboxattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 512,
+                        zoomOffset: -1
+                    })
+
+                    satellite = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                        maxZoom: 21,
+                        attribution: mapboxattr,
+                        id: 'user12435235124125235824592457/ckanekpxi1o3y1ipkm8tl6v3i',
+                        tileSize: 512,
+                        zoomOffset: -1
+                    })
+
+                    gmapsnormal = L.tileLayer('https://www.google.com/maps/vt?pb=!1m4!1m3!1i{z}!2i{x}!3i{y}!2m2!2sm!3i504221335!3m7!2sen-US!5i1105!12m4!1i68!2m2!1sset!2sTerrain!5m1!5f4.0!23i1358902', {
+                        maxZoom: 21,
+                        attribution: gmapsattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 256,
+                        zoomOffset: 0
+                    })
+
+                    gmapssatellite = L.tileLayer('https://mt{s}.googleapis.com/vt?lyrs=y&hl=en-US&x={x}&y={y}&z={z}', {
+                        maxZoom: 21,
+                        attribution: gmapsattr,
+                        id: 'user12435235124125235824592457/ckanekpxi1o3y1ipkm8tl6v3i',
+                        tileSize: 256,
+                        zoomOffset: 0,
+                        subdomains: ["0", "1", "2", "3"]
+                    })
+
+                    var mymap = L.map('mapid', {
+                        center: [0.0, 0.0],
+                        zoom: 15,
+                        layers: [normal, data]
+                    })
+
+                    var l1 = L.latLng(3.19989, 125.61503949999997)
+                    var l2 = L.latLng(-15.55011, 88.11503949999997)
+                    bounds = L.latLngBounds(l1, l2)
+                    mymap.panTo(bounds.getCenter())
+                    mymap.fitBounds(bounds)
+                    mymap.setZoom(mymap.getZoom() + 1)
+
+                    var layernames = {
+                        "Mapbox Normal": normal,
+                        "Google Maps Normal": gmapsnormal,
+                        "Mapbox Satellite": satellite,
+                        "Google Maps Satellite": gmapssatellite
+                    }
+                    
+                    var dataset = {
+                        "Smarty Pins data": data
+                    }
+                
+                    layers = L.control.layers(layernames, dataset)
+                    layers.addTo(mymap)		
+                </script>
+            </body>
+        </html>
+    

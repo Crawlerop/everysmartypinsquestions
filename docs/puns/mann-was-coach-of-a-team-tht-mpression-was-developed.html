@@ -1,0 +1,112 @@
+ 
+    <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+                <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+                <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+                <style>
+                    body {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    html, body, #mapid {
+                        height: 100%;
+                        width: 100%;
+                    }
+                </style>
+                
+            </head>
+            <body>
+                <div id="mapid"></div>
+                <script>
+                    var data = L.layerGroup()
+                
+                    m = L.marker([48.1351253, 11.581980599999952])
+                        
+                    m.on('click', function(e){
+                        mymap.setView([48.1351253, 11.581980599999952], 19); 
+                    })
+                        
+                    m.bindPopup("<b>Between managing Germany and the USA national teams, J\xfcrgen Klinsmann was coach of a team from which German city?</b><br />The answer is: Munich, Germany<br /><br /> Hint: The team currently plays at the Allianz Arena, the same place where the Audio Compression was developed.<br /><br /> Non-standard question<br /><br /> Appears in region: en-US,en-GB,en-AU").addTo(data)
+                        
+                    L.polygon([[51.82922226899982, 14.863230599999952], [47.04546210197234,14.863230599999952], [47.04546210197234,6.103464974999952], [51.82922226899982,6.103464974999952]]).bindPopup("Region boundary").addTo(data)
+
+                    c = L.circle([48.1351253, 11.581980599999952], 51195.85604015707, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c.on('click', function(e){
+                        mymap.setView([48.1351253, 11.581980599999952], 15);
+                    })
+
+                    c.bindPopup("Answer range").addTo(data)
+
+                    mapboxattr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' + '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+
+                    gmapsattr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' + '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="https://maps.google.com/">Google Maps</a>'
+
+                    normal = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                        maxZoom: 21,
+                        attribution: mapboxattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 512,
+                        zoomOffset: -1
+                    })
+
+                    satellite = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                        maxZoom: 21,
+                        attribution: mapboxattr,
+                        id: 'user12435235124125235824592457/ckanekpxi1o3y1ipkm8tl6v3i',
+                        tileSize: 512,
+                        zoomOffset: -1
+                    })
+
+                    gmapsnormal = L.tileLayer('https://www.google.com/maps/vt?pb=!1m4!1m3!1i{z}!2i{x}!3i{y}!2m2!2sm!3i504221335!3m7!2sen-US!5i1105!12m4!1i68!2m2!1sset!2sTerrain!5m1!5f4.0!23i1358902', {
+                        maxZoom: 21,
+                        attribution: gmapsattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 256,
+                        zoomOffset: 0
+                    })
+
+                    gmapssatellite = L.tileLayer('https://mt{s}.googleapis.com/vt?lyrs=y&hl=en-US&x={x}&y={y}&z={z}', {
+                        maxZoom: 21,
+                        attribution: gmapsattr,
+                        id: 'user12435235124125235824592457/ckanekpxi1o3y1ipkm8tl6v3i',
+                        tileSize: 256,
+                        zoomOffset: 0,
+                        subdomains: ["0", "1", "2", "3"]
+                    })
+
+                    var mymap = L.map('mapid', {
+                        center: [0.0, 0.0],
+                        zoom: 15,
+                        layers: [normal, data]
+                    })
+
+                    var l1 = L.latLng(51.82922226899982, 14.863230599999952)
+                    var l2 = L.latLng(47.04546210197234, 6.103464974999952)
+                    bounds = L.latLngBounds(l1, l2)
+                    mymap.panTo(bounds.getCenter())
+                    mymap.fitBounds(bounds)
+                    mymap.setZoom(mymap.getZoom() + 1)
+
+                    var layernames = {
+                        "Mapbox Normal": normal,
+                        "Google Maps Normal": gmapsnormal,
+                        "Mapbox Satellite": satellite,
+                        "Google Maps Satellite": gmapssatellite
+                    }
+                    
+                    var dataset = {
+                        "Smarty Pins data": data
+                    }
+                
+                    layers = L.control.layers(layernames, dataset)
+                    layers.addTo(mymap)		
+                </script>
+            </body>
+        </html>
+    

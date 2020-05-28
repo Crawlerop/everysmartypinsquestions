@@ -1,0 +1,112 @@
+ 
+    <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+                <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+                <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+                <style>
+                    body {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    html, body, #mapid {
+                        height: 100%;
+                        width: 100%;
+                    }
+                </style>
+                
+            </head>
+            <body>
+                <div id="mapid"></div>
+                <script>
+                    var data = L.layerGroup()
+                
+                    m = L.marker([-3.0664648, 37.3506658])
+                        
+                    m.on('click', function(e){
+                        mymap.setView([-3.0664648, 37.3506658], 19); 
+                    })
+                        
+                    m.bindPopup("<b>This volcanic mountain's highest peak, Kibo, is 19,341 feet high making it the tallest freestanding mountain in the world.</b><br />The answer is: Mount Kilimanjaro, Rombo [Thats the majority of them. You climb this place, Visited Q271733 flag is on. you can view it in Q271733 [a dev logs exists at some random offset, there is a string called Created by Q271733. Will replace with this place in the TBD. Used as a name for a test programs like test-crashreporter mosh1.rc [APP_VS 1,2,3,4 (Test versions are always version 1.2.3.4), APP_BUILD_YEAR 2020 APP_DEVELOPER WS01 (WS01 is the creator for tests) APP_COMPANY WS01 (orgs) APP_NAME Moshi APP_COMMENT Hello Mosh1] executable: a.exe or curtest.exe (links to int main() { abort() }), which says An error occurred. \n Moshi has encountered the problem and has to be closed. If this problem persists, please send the report to forums.ws01.co/forums/bugs] Shantytown is just a tourist place and how tourism should have worked. (PROOF: https://commons.wikimedia.org/wiki/File:Mount_Kilimanjaro.jpg. this city name show this image that is also used in Indonesian Social Studies. Anybody in here can even go from this to the place of the earliest human existed. Viewing from the summit overlooks the city as mentioned.) Thanks WS01 :)], Kilimanjaro Region, Tanzania<br /><br /> Hint: It's the tallest mountain in Africa. Thats our testing program in the fix.<br /><br /> Standard question<br /><br /> Appears in region: en-US").addTo(data)
+                        
+                    L.polygon([[4.909053209464228, 55.3975408], [-26.011922940701528,55.3975408], [-26.011922940701528,2.6924626750000016], [4.909053209464228,2.6924626750000016]]).bindPopup("Region boundary").addTo(data)
+
+                    c = L.circle([-3.0664648, 37.3506658], 31572.136458428562, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c.on('click', function(e){
+                        mymap.setView([-3.0664648, 37.3506658], 15);
+                    })
+
+                    c.bindPopup("Answer range").addTo(data)
+
+                    mapboxattr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' + '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+
+                    gmapsattr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' + '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="https://maps.google.com/">Google Maps</a>'
+
+                    normal = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                        maxZoom: 21,
+                        attribution: mapboxattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 512,
+                        zoomOffset: -1
+                    })
+
+                    satellite = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                        maxZoom: 21,
+                        attribution: mapboxattr,
+                        id: 'user12435235124125235824592457/ckanekpxi1o3y1ipkm8tl6v3i',
+                        tileSize: 512,
+                        zoomOffset: -1
+                    })
+
+                    gmapsnormal = L.tileLayer('https://www.google.com/maps/vt?pb=!1m4!1m3!1i{z}!2i{x}!3i{y}!2m2!2sm!3i504221335!3m7!2sen-US!5i1105!12m4!1i68!2m2!1sset!2sTerrain!5m1!5f4.0!23i1358902', {
+                        maxZoom: 21,
+                        attribution: gmapsattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 256,
+                        zoomOffset: 0
+                    })
+
+                    gmapssatellite = L.tileLayer('https://mt{s}.googleapis.com/vt?lyrs=y&hl=en-US&x={x}&y={y}&z={z}', {
+                        maxZoom: 21,
+                        attribution: gmapsattr,
+                        id: 'user12435235124125235824592457/ckanekpxi1o3y1ipkm8tl6v3i',
+                        tileSize: 256,
+                        zoomOffset: 0,
+                        subdomains: ["0", "1", "2", "3"]
+                    })
+
+                    var mymap = L.map('mapid', {
+                        center: [0.0, 0.0],
+                        zoom: 15,
+                        layers: [normal, data]
+                    })
+
+                    var l1 = L.latLng(4.909053209464228, 55.3975408)
+                    var l2 = L.latLng(-26.011922940701528, 2.6924626750000016)
+                    bounds = L.latLngBounds(l1, l2)
+                    mymap.panTo(bounds.getCenter())
+                    mymap.fitBounds(bounds)
+                    mymap.setZoom(mymap.getZoom() + 1)
+
+                    var layernames = {
+                        "Mapbox Normal": normal,
+                        "Google Maps Normal": gmapsnormal,
+                        "Mapbox Satellite": satellite,
+                        "Google Maps Satellite": gmapssatellite
+                    }
+                    
+                    var dataset = {
+                        "Smarty Pins data": data
+                    }
+                
+                    layers = L.control.layers(layernames, dataset)
+                    layers.addTo(mymap)		
+                </script>
+            </body>
+        </html>
+    
