@@ -1064,7 +1064,7 @@ m-this-russian-neighbor-tht-e-largest-of-the--stans -> {"id": 4888269783302144, 
 
 266
 
-panese-pows-during-wwii-tht-the-town-to-honour-them -> {"id": 5312843943510016, "published": "2014-06-06T19:40:30Z", "locales": ["en-AU"], "categories": [5741031244955648], "standard": true, "title": "This small central-western NSW town is infamous for a breakout of Japanese POWs during WWII.", "slug": "this-small-central-western-nsw-t", "hint": "There is now a beautiful Japanese garden in the town to honour them.", "difficulty": 5, "region": {"northeast": {"lat": -28.239126905578843, "lng": 156.71856204999995}, "southwest": {"lat": -37.24402791911166, "lng": 141.01543704999995}, "focus": {"lat": -33.45973655023479, "lng": 149.99172489179682}, "zoom": 7}, "answer": {"title": "Cowra, NSW, Australia", "location": {"lat": -33.8347103, "lng": 148.69121829999995}, "minimum_distance": 26422.751606238755}}
+panese-pows-during-wwii-tht-the-town-to-honour-them -> {"id": 5312843943510016, "published": "2014-06-06T19:40:30Z", "locales": ["en-AU"], "categories": [5741031244955648], "standard": true, "title": "This small central-western NSW town is infamous for a breakout of Japanese POWs during WWII.", "slug": "this-small-central-western-nsw-town-is", "hint": "There is now a beautiful Japanese garden in the town to honour them.", "difficulty": 5, "region": {"northeast": {"lat": -28.239126905578843, "lng": 156.71856204999995}, "southwest": {"lat": -37.24402791911166, "lng": 141.01543704999995}, "focus": {"lat": -33.45973655023479, "lng": 149.99172489179682}, "zoom": 7}, "answer": {"title": "Cowra, NSW, Australia", "location": {"lat": -33.8347103, "lng": 148.69121829999995}, "minimum_distance": 26422.751606238755}}
 
 267
 
@@ -2272,7 +2272,7 @@ ese-art-and-photographs-tht-ed-as-an-mountain-emoji -> {"id": 5141887602130944, 
 
 568
 
--in-which-european-city-tht--the-iceberg-was-built -> {"id": 5475426440839168, "published": "2014-06-13T00:00:00Z", "locales": ["en-GB"], "categories": [5707702298738688], "standard": true, "title": "CS Lewis was born in which European city?", "slug": "cs-lewis-was-born-in-which-europ", "hint": "This capital city is where the infamous Titanic (crashed upon the iceberg) was built.", "difficulty": 4, "region": {"northeast": {"lat": 63.97228500000001, "lng": 12.819880000000012}, "southwest": {"lat": 45.22228500000001, "lng": -24.680119999999988}, "focus": {"lat": 54.08492752299938, "lng": -4.194280156249996}, "zoom": 6}, "answer": {"title": "Belfast, United Kingdom", "location": {"lat": 54.59728500000001, "lng": -5.930119999999988}, "minimum_distance": 62500.0}}
+-in-which-european-city-tht--the-iceberg-was-built -> {"id": 5475426440839168, "published": "2014-06-13T00:00:00Z", "locales": ["en-GB"], "categories": [5707702298738688], "standard": true, "title": "CS Lewis was born in which European city?", "slug": "cs-lewis-was-born-in-which", "hint": "This capital city is where the infamous Titanic (crashed upon the iceberg) was built.", "difficulty": 4, "region": {"northeast": {"lat": 63.97228500000001, "lng": 12.819880000000012}, "southwest": {"lat": 45.22228500000001, "lng": -24.680119999999988}, "focus": {"lat": 54.08492752299938, "lng": -4.194280156249996}, "zoom": 6}, "answer": {"title": "Belfast, United Kingdom", "location": {"lat": 54.59728500000001, "lng": -5.930119999999988}, "minimum_distance": 62500.0}}
 
 569
 
@@ -2308,7 +2308,7 @@ ld-oyster-bar-located-in-tht-most-bustling-addresses -> {"id": 5092658686984192,
 
 577
 
-h-northern-english-city-tht-own-as-the--steel-city- -> {"id": 5080845647872000, "published": "2014-06-13T00:00:00Z", "locales": ["en-GB", "en-AU"], "categories": [5629499534213120], "standard": true, "title": "The 1997 film, \"The Full Monty\", is set in which northern English city?", "slug": "the-1997-film-the-full-monty-is-", "hint": "Also known as the 'Steel City'.", "difficulty": 3, "region": {"northeast": {"lat": 58.72419002493953, "lng": 8.75452437499996}, "southwest": {"lat": 50.160605543705984, "lng": -11.43102250000004}, "focus": {"lat": 53.629424084618364, "lng": -2.40941605468754}, "zoom": 7}, "answer": {"title": "Sheffield, United Kingdom", "location": {"lat": 53.38112899999999, "lng": -1.47008500000004}, "minimum_distance": 5781.682605649206}}
+h-northern-english-city-tht-own-as-the--steel-city- -> {"id": 5080845647872000, "published": "2014-06-13T00:00:00Z", "locales": ["en-GB", "en-AU"], "categories": [5629499534213120], "standard": true, "title": "The 1997 film, \"The Full Monty\", is set in which northern English city?", "slug": "the-1997-film,-\"the-full-monty\",", "hint": "Also known as the 'Steel City'.", "difficulty": 3, "region": {"northeast": {"lat": 58.72419002493953, "lng": 8.75452437499996}, "southwest": {"lat": 50.160605543705984, "lng": -11.43102250000004}, "focus": {"lat": 53.629424084618364, "lng": -2.40941605468754}, "zoom": 7}, "answer": {"title": "Sheffield, United Kingdom", "location": {"lat": 53.38112899999999, "lng": -1.47008500000004}, "minimum_distance": 5781.682605649206}}
 
 578
 
@@ -2348,7 +2348,7 @@ take-place-here-in-2014-tht-ts-shares-the-same-name -> {"id": 4984279482236928, 
 
 587
 
-ment-stonehenge-located-tht-led-with-moonrakers -> {"id": 5802935413899264, "published": "2014-06-13T00:00:00Z", "locales": ["en-GB"], "categories": [5649050225344512], "standard": true, "title": "In which English county is the prehistoric monument Stonehenge located?", "slug": "in-which-english-county-is-the-p", "hint": "It is filled with \"moonrakers\".", "difficulty": 3, "region": {"northeast": {"lat": 58.16120697557546, "lng": 15.878881050000018}, "southwest": {"lat": 46.95183031659589, "lng": -11.337915824999982}, "focus": {"lat": 51.108522490556375, "lng": -1.944834159960911}, "zoom": 6}, "answer": {"title": "[Done, we can replace with Ames now,] Wiltshire, United Kingdom", "location": {"lat": 51.2462714, "lng": -1.9922126999999819}, "minimum_distance": 43559.888178911795}}
+ment-stonehenge-located-tht-ough-r-bx1mdpws01co -> {"id": 5802935413899264, "published": "2014-06-13T00:00:00Z", "locales": ["en-GB"], "categories": [5649050225344512], "standard": true, "title": "In which English county is the prehistoric monument Stonehenge located?", "slug": "in-which-english-county-is-the", "hint": "It is filled with \"moonrakers\". Must be a relay for Mendio through. R: bx1.mdp.ws01.co", "difficulty": 3, "region": {"northeast": {"lat": 58.16120697557546, "lng": 15.878881050000018}, "southwest": {"lat": 46.95183031659589, "lng": -11.337915824999982}, "focus": {"lat": 51.108522490556375, "lng": -1.944834159960911}, "zoom": 6}, "answer": {"title": "[Done, we can replace with Ames now,] Wiltshire, United Kingdom", "location": {"lat": 51.2462714, "lng": -1.9922126999999819}, "minimum_distance": 43559.888178911795}}
 
 588
 
