@@ -8,7 +8,7 @@ import json
 from PIL import Image, ImageTk
 import binascii
 import io
-import os
+import os, glob
 import datetime
 import random
 import copy
@@ -684,7 +684,10 @@ def main():
         if not fnd: return
         if not os.path.exists(fnd): os.mkdir(fnd)
 
-        open(fnd+"/"+"questionmaps.txt", "w+").close()
+        flist = glob.glob(os.path.join(fnd, "*.*"))
+        for f in flist:
+            os.remove(f)
+
         isd = 0
 
         for item in lst:
