@@ -1,0 +1,916 @@
+answer_name,counts,indexlist
+"London, United Kingdom",32,"[30, 54, 80, 107, 115, 156, 184, 231, 354, 379, 393, 398, 479, 508, 513, 534, 591, 642, 653, 676, 781, 792, 810, 813, 819, 915, 921, 965, 1041, 1045, 1168, 1238]"
+"Chicago, IL, United States",19,"[47, 331, 559, 641, 727, 729, 742, 927, 938, 1122, 1149, 1213, 1254, 1353, 1365, 1401, 1419, 1438, 1471]"
+"Liverpool, United Kingdom",15,"[138, 241, 333, 336, 417, 422, 457, 876, 944, 1027, 1066, 1071, 1151, 1173, 1242]"
+"Paris, France",14,"[74, 141, 152, 158, 216, 269, 473, 487, 539, 546, 627, 691, 925, 1455]"
+"Rio de Janeiro, Brazil",11,"[56, 127, 179, 228, 288, 441, 497, 663, 770, 923, 1007]"
+"New York, NY, United States",11,"[60, 113, 114, 346, 362, 666, 732, 1061, 1125, 1209, 1268]"
+"Philadelphia, PA, United States",10,"[81, 320, 716, 1101, 1274, 1279, 1433, 1444, 1449, 1461]"
+"Los Angeles, CA, United States",10,"[123, 340, 373, 548, 775, 1019, 1206, 1275, 1408, 1459]"
+"Barcelona, Spain",10,"[131, 350, 450, 507, 563, 590, 751, 804, 1113, 1201]"
+"Madrid, Spain",10,"[186, 212, 300, 342, 412, 474, 476, 492, 614, 864]"
+"Detroit, MI, United States",10,"[319, 324, 394, 467, 510, 535, 748, 1301, 1456, 1458]"
+"Russia, Moscow",9,"[10, 36, 177, 434, 700, 790, 846, 1046, 1260]"
+"Edinburgh, United Kingdom",9,"[84, 246, 302, 501, 551, 586, 726, 805, 902]"
+"Rome, Italy",9,"[201, 247, 325, 863, 900, 951, 1167, 1333, 1379]"
+"Oxford, United Kingdom",8,"[208, 543, 690, 695, 847, 856, 881, 933]"
+"Berlin, Germany",8,"[211, 226, 248, 313, 328, 481, 1044, 1105]"
+"Sydney, New South Wales, Australia",8,"[271, 304, 428, 667, 1107, 1152, 1195, 1378]"
+"Seattle, WA, United States",8,"[809, 991, 1006, 1154, 1202, 1359, 1466, 1473]"
+"Munich, Germany",7,"[20, 46, 221, 254, 301, 571, 595]"
+"Belfast, United Kingdom",7,"[22, 575, 639, 752, 1093, 1178, 1190]"
+"Istanbul, Turkey",7,"[73, 82, 307, 842, 982, 1091, 1185]"
+"Mexico City, Mexico",7,"[75, 183, 337, 339, 437, 722, 803]"
+"Beijing, China",7,"[166, 463, 800, 855, 961, 996, 1427]"
+"Boston, MA, United States",7,"[230, 821, 1003, 1106, 1272, 1302, 1446]"
+"Athens, Kentrikos Tomeas Athinon, Greece",7,"[244, 470, 682, 959, 974, 1053, 1423]"
+"Dublin, Ireland",7,"[518, 593, 746, 852, 877, 972, 1142]"
+"Miami, FL, United States",7,"[1011, 1136, 1177, 1251, 1284, 1387, 1391]"
+"Hamburg, Germany",6,"[26, 69, 884, 1069, 1109, 1155]"
+"Manchester, United Kingdom",6,"[32, 181, 200, 257, 466, 600]"
+"Tokyo, Japan",6,"[44, 132, 219, 258, 343, 763]"
+"St. Louis, MO, United States",6,"[102, 638, 919, 1034, 1310, 1441]"
+"Sheffield, United Kingdom",6,"[273, 560, 707, 708, 992, 1114]"
+"Newcastle upon Tyne, United Kingdom",6,"[311, 381, 449, 538, 845, 911]"
+"New Orleans, LA, United States",6,"[360, 724, 764, 1293, 1367, 1376]"
+"Washington, D.C., DC, United States",6,"[395, 531, 670, 765, 1342, 1375]"
+"San Francisco, CA, United States",6,"[536, 579, 693, 1050, 1398, 1409]"
+"Glasgow, United Kingdom",6,"[541, 795, 895, 1054, 1117, 1137]"
+"Leeds, United Kingdom",5,"[1, 232, 378, 453, 517]"
+"Memphis, TN, United States",5,"[143, 202, 240, 418, 601]"
+"Pittsburgh, PA, United States",5,"[144, 799, 936, 1043, 1357]"
+"Orlando, FL, United States",5,"[171, 243, 1311, 1348, 1402]"
+"Amsterdam, The Netherlands",5,"[267, 503, 646, 1133, 1216]"
+"Mumbai, Maharashtra, India",5,"[286, 1070, 1199, 1225, 1246]"
+"Cardiff, United Kingdom",5,"[442, 606, 714, 1144, 1224]"
+"Nottingham, United Kingdom",5,"[454, 556, 987, 1042, 1090]"
+"Atlanta, GA, United States",5,"[488, 649, 660, 879, 1457]"
+"Stoke-on-Trent, United Kingdom",4,"[28, 361, 486, 565]"
+"Ho Chi Minh City, Vietnam",4,"[31, 929, 1049, 1112]"
+"Denver, CO, United States",4,"[136, 1283, 1418, 1445]"
+"Kathmandu, Central Region, Nepal",4,"[155, 1095, 1193, 1467]"
+"Havana, Cuba",4,"[165, 259, 1075, 1165]"
+"Valencia, Spain",4,"[172, 784, 1062, 1145]"
+"Sunderland, United Kingdom",4,"[191, 860, 1038, 1083]"
+"Johannesburg, Gauteng, South Africa",4,"[198, 270, 564, 756]"
+"Baltimore, MD, United States",4,"[199, 589, 618, 1037]"
+"Tehran, Iran",4,"[292, 478, 632, 1131]"
+"Leicester, United Kingdom",4,"[293, 357, 372, 947]"
+"Aberdeen, United Kingdom",4,"[399, 661, 762, 1096]"
+"Vienna, Austria",4,"[464, 558, 637, 1127]"
+"Birmingham, United Kingdom",4,"[491, 1116, 1129, 1205]"
+"Copenhagen, Denmark",4,"[623, 740, 1111, 1198]"
+"New York City, NY, United States",4,"[625, 1319, 1360, 1364]"
+"Salford, United Kingdom",4,"[1029, 1047, 1139, 1219]"
+"New Delhi, Delhi, India",4,"[1065, 1120, 1208, 1344]"
+"Brussels, Belgium",4,"[1148, 1200, 1248, 1336]"
+"Florence, Italy",3,"[14, 1135, 1217]"
+"Buenos Aires, Argentina",3,"[50, 674, 1422]"
+"Swansea, United Kingdom",3,"[51, 520, 1040]"
+"Cork, Ireland",3,"[64, 969, 981]"
+"Marseille, France",3,"[116, 237, 321]"
+"Limerick, Ireland",3,"[149, 688, 731]"
+"Sarajevo, Bosnia and Herzegovina",3,"[173, 583, 725]"
+"Cambridge, MA, United States",3,"[192, 1305, 1308]"
+"Antwerp, Belgium",3,"[222, 308, 1424]"
+"Anaheim, CA, United States",3,"[224, 1390, 1470]"
+"Las Vegas, NV, United States",3,"[225, 1241, 1443]"
+"Portland, OR, United States",3,"[236, 1060, 1340]"
+"Venice, Italy",3,"[238, 1147, 1226]"
+"Nashville, TN, United States",3,"[245, 1118, 1261]"
+Vatican City,3,"[323, 941, 971]"
+"Toronto, Ontario, Canada",3,"[329, 1016, 1092]"
+"Wellington, New Zealand",3,"[334, 694, 794]"
+"São Paulo, Brazil",3,"[351, 1164, 1236]"
+"Turin, Italy",3,"[369, 388, 699]"
+"Prague, Czech Republic",3,"[408, 573, 793]"
+"Buffalo, NY, United States",3,"[411, 1064, 1220]"
+"Plymouth, United Kingdom",3,"[419, 483, 870]"
+"Budapest, Hungary",3,"[490, 1005, 1020]"
+"San Diego, CA, United States",3,"[505, 594, 1385]"
+"Montreal, QC, Canada",3,"[547, 629, 1369]"
+"Russia, Saint Petersburg, St Petersburg",3,"[582, 721, 1230]"
+"Minneapolis, MN, United States",3,"[672, 1368, 1372]"
+"Kansas City, MO, United States",3,"[677, 1316, 1432]"
+"Krakow, Poland",3,"[684, 779, 1407]"
+"Indianapolis, IN, United States",3,"[711, 1381, 1447]"
+"Cambridge, United Kingdom",3,"[831, 868, 1013]"
+"Sacramento, CA, United States",3,"[886, 1024, 1257]"
+"Warsaw, Poland",2,"[7, 680]"
+"Frankfurt, Germany",2,"[9, 43]"
+"Beverly Hills, CA, United States",2,"[13, 1291]"
+"Palace of Westminster, London, United Kingdom",2,"[15, 1256]"
+"Bordeaux, France",2,"[38, 608]"
+"Coney Island, Brooklyn, NY, United States",2,"[39, 1074]"
+"Toronto, ON, Canada",2,"[40, 218]"
+"Santiago, Chile",2,"[67, 522]"
+"Mecca, Makkah Province, Saudi Arabia",2,"[76, 175]"
+"Lille, France",2,"[90, 598]"
+"Chantilly, France",2,"[92, 195]"
+"Imperial Palace, Chiyoda, Tokyo, Japan",2,"[99, 178]"
+"Blackpool, United Kingdom",2,"[100, 214]"
+"Accra, Greater Accra, Ghana",2,"[103, 377]"
+"London, England, United Kingdom",2,"[105, 1465]"
+"Rabat, Rabat-Sale-Zemmour-Zaer, Morocco",2,"[109, 906]"
+"Stonehenge, Amesbury, United Kingdom",2,"[122, 280]"
+"Galway, Ireland",2,"[124, 229]"
+"Guadalajara, Mexico",2,"[146, 533]"
+"Pretoria, Gauteng, South Africa",2,"[150, 314]"
+"Cairo, Cairo Governorate, Egypt",2,"[157, 298]"
+"Milan, Italy",2,"[162, 367]"
+"Casablanca, Grand Casablanca, Morocco",2,"[170, 871]"
+"Montevideo, Montevideo Department, Uruguay",2,"[194, 588]"
+"Mogadishu, Banaadir, Somalia",2,"[197, 264]"
+"Lake Titicaca, Puno, Peru",2,"[204, 299]"
+"Dortmund, Germany",2,"[206, 297]"
+"Houston, TX, United States",2,"[207, 1374]"
+"Newcastle, England, United Kingdom",2,"[215, 655]"
+"Kakadu National Park, Northern Territory, Australia",2,"[227, 970]"
+"Auckland, New Zealand",2,"[235, 817]"
+"Jerusalem, Israel",2,"[253, 322]"
+"Brooklyn, NY, United States",2,"[261, 1403]"
+"Kiev, Kyiv city, Ukraine",2,"[266, 348]"
+"Lyon, France",2,"[317, 545]"
+"Port Arthur, Tasmania, Australia",2,"[326, 850]"
+"Peterborough, United Kingdom",2,"[327, 413]"
+"Serbia, Novi Sad, Vojvodina",2,"[353, 420]"
+"Notting Hill, United Kingdom",2,"[364, 807]"
+"Stockholm, Sweden",2,"[376, 648]"
+"Kyoto, Kyoto Prefecture, Japan",2,"[385, 475]"
+"Rikers Island, NY, United States",2,"[392, 773]"
+"Brasilia - Federal District, Brazil",2,"[400, 882]"
+"St. Andrews, United Kingdom",2,"[415, 566]"
+"Las Vegas, United States",2,"[421, 1410]"
+"Pisa, Italy",2,"[423, 576]"
+"Zihuatanejo, Mexico",2,"[424, 1039]"
+"Central Park, New York City, NY, United States",2,"[435, 1191]"
+"Inverness, United Kingdom",2,"[438, 502]"
+"Milwaukee, WI, United States",2,"[440, 1394]"
+"Quito, Pichincha, Ecuador",2,"[482, 553]"
+Belgrade,2,"[493, 1170]"
+"Melbourne, Victoria, Australia",2,"[496, 829]"
+"Dorset, United Kingdom",2,"[506, 710]"
+Bangkok Thailand,2,"[509, 1393]"
+"Naples, Italy",2,"[527, 537]"
+"Charlotte, NC, United States",2,"[567, 967]"
+"Oakland, CA, United States",2,"[584, 720]"
+"Atlantic City, NJ, United States",2,"[587, 1304]"
+"St Kilda, Victoria, Australia",2,"[592, 887]"
+"Kabul, Afghanistan",2,"[602, 728]"
+"Lake District National Park, Keswick, United Kingdom",2,"[619, 737]"
+"Dubrovnik, Croatia",2,"[669, 1088]"
+"Phnom Penh, Cambodia",2,"[703, 709]"
+"Canterbury, United Kingdom",2,"[736, 771]"
+"Cannes, France",2,"[741, 815]"
+"Austin, TX, United States",2,"[750, 1463]"
+"Danbury, CT, United States",2,"[754, 827]"
+"Brooklyn Bridge, Brooklyn, NY, United States",2,"[758, 791]"
+"Gaborone, South-East, Botswana",2,"[777, 834]"
+"Montevideo, Uruguay",2,"[783, 950]"
+"Dunkirk, France",2,"[812, 994]"
+"Torquay, United Kingdom",2,"[824, 865]"
+"Wrigley Field, West Addison Street, Chicago, IL, United States",2,"[862, 1160]"
+"Lagos, Nigeria",2,"[875, 904]"
+"New Haven, CT, United States",2,"[889, 1175]"
+"Brighton, United Kingdom",2,"[891, 916]"
+"Verona, Italy",2,"[920, 958]"
+"Lisbon, Portugal",2,"[932, 1159]"
+"Vancouver, BC, Canada",2,"[963, 1072]"
+"Russia, Krasnodar Krai, Sochi",2,"[968, 1354]"
+"Kingston, Saint Andrew Parish, Jamaica",2,"[979, 988]"
+"Bilbao, Spain",2,"[999, 1000]"
+"Daugavpils, Daugavpils pilsēta, Latvia",2,"[1002, 1018]"
+"Islamabad, Islamabad Capital Territory, Pakistan",2,"[1009, 1036]"
+"Greater Manchester, United Kingdom",2,"[1015, 1051]"
+Andorra,2,"[1017, 1057]"
+"Breda, The Netherlands",2,"[1056, 1126]"
+"Kingston upon Hull, United Kingdom",2,"[1059, 1134]"
+"Seville, Spain",2,"[1073, 1162]"
+"Acapulco, Mexico",2,"[1082, 1174]"
+"Salem, MA, United States",2,"[1084, 1179]"
+"Ankara, Turkey",2,"[1087, 1182]"
+"Northampton, United Kingdom",2,"[1130, 1214]"
+"Long Island, NY, United States",2,"[1138, 1282]"
+"Gateshead, United Kingdom",2,"[1140, 1221]"
+"Penzance, United Kingdom",2,"[1150, 1227]"
+"Gloucester, United Kingdom",2,"[1156, 1229]"
+"Lincoln Cathedral, Minster Yard, Lincoln, United Kingdom",2,"[1158, 1232]"
+"Granada, Spain",2,"[1163, 1233]"
+"Coventry, United Kingdom",2,"[1171, 1239]"
+"Bristol, United Kingdom",2,"[1189, 1244]"
+"Bialystok, Poland",2,"[1210, 1250]"
+"Queensboro Bridge, NYC, NY, United States",2,"[1384, 1454]"
+"Phoenix, AZ, United States",2,"[1389, 1460]"
+"Hartford, CT, United States",1,[0]
+"Kobe, Hyogo Prefecture, Japan",1,[2]
+"GIO Stadium, Bruce, ACT, Australia",1,[3]
+"Jakarta, Indonesia",1,[4]
+"Durban, KwaZulu-Natal, South Africa",1,[5]
+"Art Gallery Of NSW, Sydney, New South Wales, Australia",1,[6]
+"University of Miami, Coral Gables, Florida, United States",1,[8]
+"Chifley Tower Management Office, Sydney, NSW, Australia",1,[11]
+"Grafton, NSW, Australia",1,[12]
+"Nantes, France",1,[16]
+"Bolton, United Kingdom",1,[17]
+"Jerilderie, NSW, Australia",1,[18]
+"30 Rockefeller Center, New York, NY, United States",1,[19]
+"Waitangi, Northland, NZ",1,[21]
+"Dakar, Senegal",1,[23]
+"Jindabyne, NSW, Australia",1,[24]
+"Wrexham, United Kingdom",1,[25]
+"Safeco Field, 1st Avenue South, Seattle, WA, United States",1,[27]
+"State Library of NSW, Macquarie Street, Sydney, New South Wales, Australia",1,[29]
+"Peckham, United Kingdom",1,[33]
+"Rotorua, Bay Of Plenty, NZ",1,[34]
+"Upper West Side, New York City, NY, United States",1,[35]
+"Penrith Stadium, Sydney, Ransley Street, Penrith, NSW, Australia",1,[37]
+"Glenrowan, Victoria, Australia",1,[41]
+"Donegal, Ireland",1,[42]
+"Cairns Tropical Zoo, Captain Cook Highway, Palm Cove, QLD, Australia",1,[45]
+"Rosehill Gardens Event Centre, James Ruse Drive, Rosehill, NSW, Australia",1,[48]
+Curaçao,1,[49]
+"Monticello, Charlottesville, VA, United States",1,[52]
+"Bologna, Italy",1,[53]
+"Kahurangi National Park, NZ",1,[55]
+"Lambeau Field, Lombardi Avenue, Green Bay, WI, United States",1,[57]
+"Russell, Northland, NZ",1,[58]
+"Scarborough, United Kingdom",1,[59]
+"Berne, Switzerland",1,[61]
+"Parma, Italy",1,[62]
+"Surry Hills, NSW, Australia",1,[63]
+"AAMI Park, Olympic Boulevard, Melbourne, Victoria, Australia",1,[65]
+"Glendale, Arizona, United States",1,[66]
+Monaco,1,[68]
+"Caracas, Caracas Metropolitan District, Venezuela",1,[70]
+"Mt Twynam, Geehi, NSW, Australia",1,[71]
+"Port Fairy, Victoria, Australia",1,[72]
+"Bay City, MI, United States",1,[77]
+"Beechworth, Victoria, Australia",1,[78]
+"Santos - São Paulo, Brazil",1,[79]
+"Nyngan, NSW, Australia",1,[83]
+"Healesville Sanctuary, Healesville, Victoria, Australia",1,[85]
+"Derby, United Kingdom",1,[86]
+"Langley, McLean, Virginia, United States",1,[87]
+"Baghdād, Iraq",1,[88]
+"Gibson Desert, Neale, WA, Australia",1,[89]
+"Glasgow, Scotland, United Kingdom",1,[91]
+"Thredbo, NSW, Australia",1,[93]
+"Cali - Valle del Cauca, Colombia",1,[94]
+"East Rutherford, NJ, United States",1,[95]
+"Cerne Abbas Giant, Cerne Abbas, United Kingdom",1,[96]
+"Douala, Littoral, Cameroon",1,[97]
+"Story Bridge Adventure Climb, Main Street, Kangaroo Point, Queensland, Australia",1,[98]
+"Mount Gambier, SA, Australia",1,[101]
+"Parramatta Stadium, Parramatta, NSW, Australia",1,[104]
+"Surrey, United Kingdom",1,[106]
+"Abidjan, Lagunes, Côte d'Ivoire",1,[108]
+"Windsor, NSW, Australia",1,[110]
+"Lake District National Park, Church Street, Ambleside, United Kingdom",1,[111]
+"Glebe Markets, Glebe Point Road, Glebe, NSW, Australia",1,[112]
+"Fort Denison, Sydney, NSW, Australia",1,[117]
+"Greenwich, United Kingdom",1,[118]
+"Vichy, France",1,[119]
+"Cygnet, Tasmania, Australia",1,[120]
+"Worcester, United Kingdom",1,[121]
+"National Archives & Records Administration, Pennsylvania Avenue Northwest, Washington, DC, United States",1,[125]
+"Condobolin, NSW, Australia",1,[126]
+"Simonds Stadium Geelong, South Geelong, Victoria, Australia",1,[128]
+"Alton, Staffordshire, United Kingdom",1,[129]
+"Bunker Hill Monument, Monument Square, Charlestown, MA, United States",1,[130]
+"Bucharest, Romania",1,[133]
+"Napier, Hawke's Bay, NZ",1,[134]
+"Manchester, England, United Kingdom",1,[135]
+"Skyline Gondola Queenstown, Brecon Street, Queenstown, NZ",1,[137]
+"Salto, Uruguay",1,[139]
+"Huntington Beach, CA, United States",1,[140]
+"Invercargill, Southland, NZ",1,[142]
+"Perth, Western Australia, Australia",1,[145]
+"York, United Kingdom",1,[147]
+"Cleveland, OH, United States",1,[148]
+"Aami Stadium, Adelaide, SA, Australia",1,[151]
+"Richmond, Tasmania, Australia",1,[153]
+"Quebec City, Quebec, Canada",1,[154]
+"The Dead Sea, South District, Israel",1,[159]
+"Delmonico's, Beaver Street, New York, NY, United States",1,[160]
+"Estadio Centenario, Avda Dr. Americo Ricaldoni, Montevideo, Montevideo Department, Uruguay",1,[161]
+"Eden, NSW, Australia",1,[163]
+"Golden Spike National Historic Site, Brigham City, UT, United States",1,[164]
+"Swansea, Tasmania, Australia",1,[167]
+"Perisher Ski Resort, Perisher Valley, NSW, Australia",1,[168]
+"Rhodes, Greece",1,[169]
+"San Jose, CA, United States",1,[174]
+"Luna Park Sydney, Olympic Drive, Milsons Point, NSW, Australia",1,[176]
+"Hinchinbrook Island, QLD, Australia",1,[180]
+"Capitol US, First Street Southeast, Washington, DC, United States",1,[182]
+"MCG, Melbourne, Victoria, Australia",1,[185]
+"Carcassonne, France",1,[187]
+"Eugowra, NSW, Australia",1,[188]
+Strait of Gibraltar,1,[189]
+"Appomattox Court House National Historical Park, Appomattox, VA, United States",1,[190]
+"Yosemite Village, Yosemite Valley, CA, United States",1,[193]
+"Monarto Zoo, Old Princes Highway, Monarto, SA, Australia",1,[196]
+"Fremantle Prison, The Terrace, Fremantle, WA, Australia",1,[203]
+"Warwick Farm Racecourse, Warwick Farm, NSW, Australia",1,[205]
+"Salt Lake City, UT, United States",1,[209]
+"Wollemi National Park, NSW, Australia",1,[210]
+"Whitechapel, United Kingdom",1,[213]
+"Broome, WA, Australia",1,[217]
+"Gold Coast, QLD, Australia",1,[220]
+"Odessa, Ukraine",1,[223]
+"Reading, United Kingdom",1,[233]
+"Ithaca, New York, United States",1,[234]
+"Taronga Western Plains Zoo, Obley Road, Dubbo, NSW, Australia",1,[239]
+"Port-au-Prince, Ouest, Haiti",1,[242]
+"Lone Pine Koala Sanctuary, Jesmond Road, Fig Tree Pocket, QLD, Australia",1,[249]
+"Nagoya, Aichi, Japan",1,[250]
+"The Jacob K. Javits Convention Center, West 34th Street, NYC, NY, United States",1,[251]
+"Providence, RI, United States",1,[252]
+"Hamilton Island, QLD, Australia",1,[255]
+"Martin Place, Sydney, NSW, Australia",1,[256]
+"Tipperary, Ireland",1,[260]
+"Kona, HI, United States",1,[262]
+"Cowra, NSW, Australia",1,[263]
+"Honolulu, HI, United States",1,[265]
+"Astana, Akmola Province, Kazakhstan",1,[268]
+"Brest, France",1,[272]
+"Jenolan Caves, Jenolan, NSW, Australia",1,[274]
+"Pro Football Hall of Fame, George Halas Drive Northwest, Canton, OH, United States",1,[275]
+"Allianz Stadium, Moore Park Road, Sydney, New South Wales, Australia",1,[276]
+"Port Elizabeth, Eastern Cape, South Africa",1,[277]
+"Siena, Italy",1,[278]
+Burj Khalifa - Business Bay - Dubai - UAE,1,[279]
+"Guayaquil, Guayas, Ecuador",1,[281]
+"Kaneohe, HI, United States",1,[282]
+"Robertson, NSW, Australia",1,[283]
+"Hyde Park Barracks Museum, Sydney, NSW, Australia",1,[284]
+"Nice, France",1,[285]
+"Metropolitan Museum, 5th Avenue, New York, NY, United States",1,[287]
+"Fort Meade, MD, United States",1,[289]
+"San Jose, Costa Rica",1,[290]
+"Bay Of Islands, Russell, Northland, NZ",1,[291]
+"Wentworth Park, Ultimo, NSW, Australia",1,[294]
+"Salt Lake City, Utah, United States",1,[295]
+"Bratislava, Slovakia",1,[296]
+"Sydney Harbour, Goat Island, Sydney, NSW, Australia",1,[303]
+"Mount Etna, Catania, Italy",1,[305]
+"Tuti Island, Khartoum, Sudan",1,[306]
+"Easter Island, Isla de Pascua, Chile",1,[309]
+"Mobile, Alabama, United States",1,[310]
+"Drogheda, Ireland",1,[312]
+"Carlton, Victoria, Australia",1,[315]
+"Newcastle, United Kingdom",1,[316]
+"Cadmans Cottage, George Street, Sydney, NSW, Australia",1,[318]
+"The Big Golden Guitar Tourist Centre, National Highway 15, Tamworth, NSW, Australia",1,[330]
+"Norwood Oval, Adelaide, SA, Australia",1,[332]
+"Orleans, California, United States",1,[335]
+"Nimbin, NSW, Australia",1,[338]
+"Punxsutawney, Pennsylvania, United States",1,[341]
+"Raleigh, NC, United States",1,[344]
+"Essendon, Victoria, Australia",1,[345]
+"Royal Leamington Spa, United Kingdom",1,[347]
+"Russia, Volgograd",1,[349]
+"Carriageworks, Wilson Street, Sydney, NSW, Australia",1,[352]
+"Antietam National Battlefield, Dunker Church Road, Sharpsburg, MD, United States",1,[355]
+"Niesen, Reichenbach im Kandertal, Switzerland",1,[356]
+"Kununurra, WA, Australia",1,[358]
+"Yokohama, Kanagawa, Japan",1,[359]
+"Government House, Sydney, NSW, Australia",1,[363]
+"Da Nang, Vietnam",1,[365]
+"Buckingham Palace, London, United Kingdom",1,[366]
+"Giant's Causeway Holiday Cottages, Causeway Road, Bushmills, United Kingdom",1,[368]
+"National Zoo & Aquarium, Lady Denman Drive, Canberra, Australian Capital Territory, Australia",1,[370]
+"Tiger Stadium, Trumbull Street, Detroit, MI, United States",1,[371]
+"Somerset, United Kingdom",1,[374]
+"Nuremberg, Germany",1,[375]
+"Queens, NY, United States",1,[380]
+"Belo Horizonte - Minas Gerais, Brazil",1,[382]
+"Spotswood, Victoria, Australia",1,[383]
+"Ipswich, United Kingdom",1,[384]
+"The New York Stock Exchange, Wall Street, New York, NY, United States",1,[386]
+"Leichhardt Oval, Glover Street, Sydney, New South Wales, Australia",1,[387]
+"Disney World Resort, Century Drive, Lake Buena Vista, FL, United States",1,[389]
+"Bathurst, NSW, Australia",1,[390]
+"Swansea, Wales, United Kingdom",1,[391]
+Guam,1,[396]
+"Pottsville, PA, United States",1,[397]
+"Southampton, United Kingdom",1,[401]
+"Devonport, Tasmania, Australia",1,[402]
+"Crook, WY, United States",1,[403]
+"Rugby, United Kingdom",1,[404]
+"Fleurieu Peninsula, SA, Australia",1,[405]
+"Stuttgart, Germany",1,[406]
+"Kyoto, Japan",1,[407]
+"La Ceiba, Atlantida, Honduras",1,[409]
+"The Australian Golf Club, Sydney, Bannerman Crescent, Rosebery, New South Wales, Australia",1,[410]
+"Lincoln Memorial Reflecting Pool, Lincoln Memorial Circle NW, Washington, DC, United States",1,[414]
+"Stawell, Victoria, Australia",1,[416]
+"Funchal, Portugal",1,[425]
+"Talladega Superspeedway, Lincoln, AL, United States",1,[426]
+"Mataranka, NT, Australia",1,[427]
+"Long Bay Correctional Facility, Anzac Parade, Malabar, NSW, Australia",1,[429]
+"Four Corners Monument, Teec Nos Pos, AZ, United States",1,[430]
+"Northamptonshire, United Kingdom",1,[431]
+"Hisense Arena, Melbourne, Victoria, Australia",1,[432]
+"Liège, Belgium",1,[433]
+"Zagreb, Croatia",1,[436]
+"Popondetta, Northern Province, Papua New Guinea",1,[439]
+"Stanwell Park, NSW, Australia",1,[443]
+"Ponsonby, Auckland, NZ",1,[444]
+"Rotterdam, The Netherlands",1,[445]
+"Fishguard, United Kingdom",1,[446]
+"Hollywood Roosevelt Hotel, Hollywood Boulevard, Hollywood, Los Angeles, California, United States",1,[447]
+"Tasmania, Australia",1,[448]
+"Dunedin, Otago, NZ",1,[451]
+"Seoul, South Korea",1,[452]
+"Adler Planetarium, South Lake Shore Drive, Chicago, IL, United States",1,[455]
+"Sistine Chapel, Viale Vaticano, Vatican City",1,[456]
+"Adelaide Entertainment Centre, Port Road, Adelaide, SA, Australia",1,[458]
+"Zurich, Switzerland",1,[459]
+"Sofia, Bulgaria",1,[460]
+"Mount McKinley, Denali, Alaska, United States",1,[461]
+"Parramatta, NSW, Australia",1,[462]
+"Warracknabeal, Victoria, Australia",1,[465]
+"Heraklion, Greece",1,[468]
+"Åhus, Sweden",1,[469]
+"Albany, WA, Australia",1,[471]
+"Washington Crossing, Pennsylvania, United States",1,[472]
+"Mogo Zoo, Tomakin Road, Mogo, NSW, Australia",1,[477]
+"Lynchburg, TN, United States",1,[480]
+"King Island, Tasmania, Australia",1,[484]
+"Mount Katahdin, Baxter State Park, Northeast Piscataquis, Maine, United States",1,[485]
+"Mt Ruapehu, Tongariro National Park, Manawatu-Wanganui Region, New Zealand",1,[489]
+"Richmond, Victoria, Australia",1,[494]
+"Secret Intelligence Service, Albert Embankment, London, United Kingdom",1,[495]
+"Tribeca, NYC, NY, United States",1,[498]
+"Winchester, United Kingdom",1,[499]
+"St. Patrick's Cathedral, East 51st Street, New York, NY, United States",1,[500]
+"Sapporo, Hokkaido Prefecture, Japan",1,[504]
+"Port Douglas, QLD, Australia",1,[511]
+"Royal Exhibition Building, Nicholson Street, Melbourne, Victoria, Australia",1,[512]
+"Pasadena, CA, United States",1,[514]
+"Rashtrapati Bhavan, Rashtrapati Bhawan, Raisina Hills, New Delhi, Delhi, India",1,[515]
+"Key West, FL, United States",1,[516]
+"North Melbourne, Victoria, Australia",1,[519]
+"Hyde Park, Elizabeth Street, Sydney, NSW, Australia",1,[521]
+"Fayetteville, Arkansas, United States",1,[523]
+"Osaka, Osaka Prefecture, Japan",1,[524]
+"St.Pauls' Cathedral, London, United Kingdom",1,[525]
+"Australian Reptile Park, Pacific Highway, Somersby, NSW, Australia",1,[526]
+"Adelaide, SA, Australia",1,[528]
+"Slough, United Kingdom",1,[529]
+"Gothenburg, Sweden",1,[530]
+"Cottesloe, WA, Australia",1,[532]
+"Rod Laver Arena, Batman Avenue, Melbourne, Victoria, Australia",1,[540]
+"Matterhorn, Zermatt, Switzerland",1,[542]
+"Botany Bay, NSW, Australia",1,[544]
+"Fort Collins, CO, United States",1,[549]
+"Rockhampton, QLD, Australia",1,[550]
+"Puckapunyal, Victoria, Australia",1,[552]
+"Eindhoven, The Netherlands",1,[554]
+Ethiopia,1,[555]
+"Charlton, London, United Kingdom",1,[557]
+"Narrabri, NSW, Australia",1,[561]
+"Grand Central, East 42nd Street, New York, NY, United States",1,[562]
+"Mount Fuji, Fujinomiya, Shizuoka Prefecture, Japan",1,[568]
+"Lancashire, United Kingdom",1,[569]
+"Canberra, ACT, Australia",1,[570]
+"Montpellier, France",1,[572]
+"Moliagul, Victoria, Australia",1,[574]
+"Motueka, Tasman, NZ",1,[577]
+"Chattanooga, TN, United States",1,[578]
+"Moreton Island, Brisbane, QLD, Australia",1,[580]
+"Fort Sumter National Monument, Sullivan's Island, SC, United States",1,[581]
+"West Bromwich, United Kingdom",1,[585]
+"Wiltshire, United Kingdom",1,[596]
+"Tomorrowland, Bay Lake, FL, United States",1,[597]
+"Cloncurry, QLD, Australia",1,[599]
+"Lake Mungo, Arumpo, NSW, Australia",1,[603]
+"Field Museum of Natural History, South Lake Shore Drive, Chicago, IL, United States",1,[604]
+"Nairobi, Kenya",1,[605]
+"Sydney, Centennial Park, New South Wales, Australia",1,[607]
+"Stamford Bridge, Fulham Road, London, United Kingdom",1,[609]
+"Forum Theatre, Flinders Street, Melbourne, Victoria, Australia",1,[610]
+"Bethel, NY, United States",1,[611]
+"Shinnecock Hills Golf Course, Tuckahoe Road, Southampton, NY, United States",1,[612]
+"Royal Randwick Racecourse, Alison Road, Randwick, NSW, Australia",1,[613]
+"Cape Byron, Middleton Street, Byron Bay, NSW, Australia",1,[615]
+"Des Plaines, IL, United States",1,[616]
+"Shropshire, United Kingdom",1,[617]
+"Coburg, Victoria, Australia",1,[620]
+"Yorktown, VA, United States",1,[621]
+"Vero Agency and Partnership, Shortland Street, Auckland, NZ",1,[622]
+"Yogyakarta, Indonesia",1,[624]
+"Musikverein, Vienna, Austria",1,[626]
+"Townsville, QLD, Australia",1,[628]
+"Khumjung, Eastern Region, Nepal",1,[630]
+"Royal Melbourne Golf Club, Cheltenham Road, Cheltenham, Victoria, Australia",1,[631]
+"Troy, MI, United States",1,[633]
+"Salzburg, Austria",1,[634]
+"Emerald, QLD, Australia",1,[635]
+"The Remarkables Ski Area, Gibbston, Otago, NZ",1,[636]
+"Oxford Art Factory, Sydney, Oxford Street, Darlinghurst, New South Wales, Australia",1,[640]
+"K2, Kashi(Kaxgar), Xinjiang, China",1,[643]
+"Hawthorn, Victoria, Australia",1,[644]
+"The Pyramids, Al Haram, Giza, Egypt",1,[645]
+"State Theatre Centre of Western Australia, William Street, Perth, Western Australia, Australia",1,[647]
+"Westland Tai Poutini National Park, Westland National Park, NZ",1,[650]
+"Redwood National and State Parks, Crescent City, CA, United States",1,[651]
+"Cootamundra, NSW, Australia",1,[652]
+"Oamaru, Otago, NZ",1,[654]
+"New Delhi, India",1,[656]
+"Kinshasa, Democratic Republic of the Congo",1,[657]
+"Leeuwarden, Netherlands",1,[658]
+"Rottnest Island, WA, Australia",1,[659]
+"Prime Ministers Lodge, Adelaide Avenue, Canberra, ACT, Australia",1,[662]
+"Bourbon St, French Quarter, New Orleans, LA, United States, North America",1,[664]
+"North Sydney Oval, Sydney, NSW, Australia",1,[665]
+"Naseby, United Kingdom",1,[668]
+"Deckchair Cinema, Darwin, Northern Territory, Australia",1,[671]
+"The Corner Hotel, Swan Street, Richmond, Victoria, Australia",1,[673]
+"WIN Sports & Entertainment Centres, Harbour Street, Wollongong, NSW, Australia",1,[675]
+"Lombok, West Nusa Tenggara, Indonesia",1,[678]
+"Walden Pond, Concord, Massachusetts, United States",1,[679]
+"Flemington Racecourse, Flemington, Victoria, Australia",1,[681]
+"Comedy Works, 15th Street, Denver, CO, United States",1,[683]
+"Death Valley National Park, United States",1,[685]
+"Goulburn, NSW, Australia",1,[686]
+"Montreal, Quebec, Canada",1,[687]
+"Nadi, Fiji",1,[689]
+"Cairo, IL, United States",1,[692]
+"Columbus, OH, United States",1,[696]
+"Collingwood, Victoria, Australia",1,[697]
+"Palace of Versailles, Versailles, France",1,[698]
+"Twizel, Canterbury, NZ",1,[701]
+"Folkestone, United Kingdom",1,[702]
+"Berkeley, CA, United States",1,[704]
+"Thomas Jefferson Memorial, Ohio Drive Southwest, Washington, DC, United States",1,[705]
+"Adelaide Arena, Crittenden Road, Findon, SA, Australia",1,[706]
+"Hastings, Hawke's Bay, New Zealand",1,[712]
+"Kalamazoo, MI, United States",1,[713]
+"Newtown, NSW, Australia",1,[715]
+"Arlington National Cemetery, Memorial Avenue, Arlington, VA, United States",1,[717]
+"Stirling Castle, Stirling, United Kingdom",1,[718]
+"Denpasar, Bali, Indonesia",1,[719]
+"Bimberi Peak, ACT, Australia",1,[723]
+"Brookvale Oval, Pittwater Road, Sydney, New South Wales, Australia",1,[730]
+"Bannockburn, United Kingdom",1,[733]
+"Sydney Entertainment Centre, Harbour Street, Sydney, New South Wales, Australia",1,[734]
+"World Trade Center, New York, NY, United States",1,[735]
+"Concord, MA, United States",1,[738]
+"Wilsons Promontory National Park, Victoria, Australia",1,[739]
+"Bowral, NSW, Australia",1,[743]
+"Clovelly, NSW, Australia",1,[744]
+"New Canaan, CT, United States",1,[745]
+"Eureka Skydeck 88, Riverside Quay, Southbank, Victoria, Australia",1,[747]
+"Stormont Estate, Belfast, United Kingdom",1,[749]
+"Manuka Oval, Canberra, ACT, Australia",1,[753]
+"Harare, Zimbabwe",1,[755]
+Phuket Thailand,1,[757]
+"The Tower Of London, London, United Kingdom",1,[759]
+"Mount Tasman, Westland National Park, West Coast, NZ",1,[760]
+"Harlem, NY, United States",1,[761]
+"Lincolnshire, United Kingdom",1,[766]
+"Acer Arena, Sydney, Edwin Flack Avenue, Sydney Olympic Park, NSW, Australia",1,[767]
+"Santa Rosa, CA, United States",1,[768]
+"Ulm, Germany",1,[769]
+"Brisbane, QLD, Australia",1,[772]
+"Hampshire, United Kingdom",1,[774]
+Kuala Lumpur Malaysia,1,[776]
+"Ellis Island, NY, Jersey City, NJ, United States",1,[778]
+"Queenstown, Tasmania, Australia",1,[780]
+"Sunrise, FL, United States",1,[782]
+"Coopers Stadium, Holden Street, Adelaide, SA, Australia",1,[785]
+Montenegro,1,[786]
+"Visalia, CA, United States",1,[787]
+"Derby, WA, Australia",1,[788]
+"Moonee Valley Racing Club, McPherson Street, Moonee Ponds, Victoria, Australia",1,[789]
+"Charlotte Pass, NSW, Australia",1,[796]
+"The White House, Pennsylvania Avenue Northwest, Washington, DC, United States",1,[797]
+"Phillip Island, Victoria, Australia",1,[798]
+"Cornwallis Island, Baffin, Unorganized, NU, Canada",1,[801]
+Abu Dhabi - United Arab Emirates,1,[802]
+"Sheffield, England, United Kingdom",1,[806]
+"Mount Tarawera, Bay Of Plenty, NZ",1,[808]
+"The Royal Sydney Golf Club, Sydney, Kent Road, Rose Bay, New South Wales, Australia",1,[811]
+"White Sands Missile Range, NM, United States",1,[814]
+"Clarksville, TN, United States",1,[816]
+"Snowdonia National Park, United Kingdom",1,[818]
+"Caulfield Racecourse, Caulfield North, Victoria, Australia",1,[820]
+"Tom Price, WA, Australia",1,[822]
+"London Eye, County Hall, Westminster Bridge Road, London, United Kingdom",1,[823]
+"University of Kentucky, Lexington, KY, United States",1,[825]
+"Salisbury, United Kingdom",1,[826]
+"Manhattan, New York, United States",1,[828]
+"Liverpool, England, United Kingdom",1,[830]
+"Thames, Waikato, New Zealand",1,[832]
+"Westminster Abbey, London, United Kingdom",1,[833]
+"Estádio do Maracanã - Rua Professor Eurico Rabelo, Rio - Rio de Janeiro, Brazil",1,[835]
+"Monmouthshire, United Kingdom",1,[836]
+"Genoa, Italy",1,[837]
+"Skoda Stadium, Grand Parade, Sydney, NSW, Australia",1,[838]
+"Hannibal, MO, United States",1,[839]
+"Young, NSW, Australia",1,[840]
+"Akron, OH, United States",1,[841]
+"Hunter Stadium, New Lambton, NSW, Australia",1,[843]
+"Market Bosworth, Nuneaton, Leicestershire, United Kingdom",1,[844]
+"Wells Fargo Center, South Broad Street, Philadelphia, Pennsylvania, United States",1,[848]
+"Augusta, GA, United States",1,[849]
+"Fremantle, WA, Australia",1,[851]
+"Kati Thanda-Lake Eyre, SA, Australia",1,[853]
+"Cambridge, Massachusetts, United States",1,[854]
+"Wembley Stadium, London, England, United Kingdom",1,[857]
+"Dallas City Hall, Marilla Street, Dallas, TX, United States",1,[858]
+"Royal National Park, NSW, Australia",1,[859]
+"Adelaide Oval, Adelaide, SA, Australia",1,[861]
+"Springfield College, Alden Street, Springfield, MA, United States",1,[866]
+"Hampton Court Palace, East Molesey, United Kingdom",1,[867]
+"Prada Marfa, United States",1,[869]
+"Warrnambool, Victoria, Australia",1,[872]
+"Pullman, Chicago, IL, United States",1,[873]
+"Remondis Stadium, Captain Cook Drive, Woolooware, New South Wales, Australia",1,[874]
+"Darjeeling, West Bengal, India",1,[878]
+"ANZ Stadium, Edwin Flack Avenue, Sydney, New South Wales, Australia",1,[880]
+"Tully, QLD, Australia",1,[883]
+"Blackburn, United Kingdom",1,[885]
+"Abel Tasman National Park, Tasman, NZ",1,[888]
+"Wales, United Kingdom",1,[890]
+"Rose Bowl Stadium, Rose Bowl Drive, Pasadena, CA, United States",1,[892]
+"Paddington, NSW, Australia",1,[893]
+"Madison Square Garden, Pennsylvania Plaza, New York, NY, United States",1,[894]
+"Fox Glacier, West Coast, NZ",1,[896]
+"Fox Plaza, Avenue of the Stars, Los Angeles, CA, United States",1,[897]
+"Waterloo, Belgium",1,[898]
+"Sydney Cricket Ground, Driver Avenue, Sydney, New South Wales, Australia",1,[899]
+"Athens, GA, United States",1,[901]
+"Le Mans, France",1,[903]
+"Bloomington, MN, United States",1,[905]
+"Geelong, Victoria, Australia",1,[907]
+"Bath, United Kingdom",1,[908]
+"Giants Stadium, New Jersey 120, East Rutherford, NJ, United States",1,[909]
+"Uluru, NT, Australia",1,[910]
+"Corfu, Greece",1,[912]
+"Shepherd's Bush, United Kingdom",1,[913]
+"Penrith, NSW, Australia",1,[914]
+Cook Islands,1,[917]
+"Vientiane, Vientiane Prefecture, Laos",1,[918]
+Thailand,1,[922]
+"Sicily, Italy",1,[924]
+"Campbelltown Sports Stadium, Rose Payten Drive, Leumeah, NSW, Australia",1,[926]
+"Princeton, NJ, United States",1,[928]
+"Ballarat, Victoria, Australia",1,[930]
+"Margaret Court Arena, Batman Avenue, Melbourne, Victoria, Australia",1,[931]
+"Isle of Wight, United Kingdom",1,[934]
+"Mount Kilimanjaro, Rombo, Kilimanjaro, Tanzania",1,[935]
+"Victorian College Of The Arts, St Kilda Road, Southbank, Victoria, Australia",1,[937]
+"Falls Creek, Victoria, Australia",1,[939]
+"The Vatican, Vatican City",1,[940]
+"Monroeville, PA, United States",1,[942]
+"High Court of Australia, Parkes Place, Canberra, Australian Capital Territory, Australia",1,[943]
+"Monkey Mia, WA, Australia",1,[945]
+"Loyola High School, Venice Boulevard, LA, CA, United States",1,[946]
+"Newcastle, NSW, Australia",1,[948]
+"John Hancock Observatory, North Michigan Avenue, Chicago, IL, United States",1,[949]
+"Mount Ossa, Lake St Clair, Tasmania, Australia",1,[952]
+"Indianapolis Motor Speedway, Indianapolis, Indiana, United States",1,[953]
+"Mount Rushmore, SD, United States",1,[954]
+"Blenheim, Marlborough, NZ",1,[955]
+"Bruges, Belgium",1,[956]
+"Punchline Comedy Club, Battery Street, San Francisco, CA, United States",1,[957]
+"Dover, United Kingdom",1,[960]
+"Rodd Island, Sydney, NSW, Australia",1,[962]
+"Albert Park, Melbourne, Victoria, Australia",1,[964]
+"Aoraki / Mount Cook, Mount Cook National Park, Canterbury, NZ",1,[966]
+"Lake Champlain, NY, United States",1,[973]
+"Crater Lake, OR, United States",1,[975]
+"Humpty Doo, NT, Australia",1,[976]
+"Reykjavik, Capital Region, Iceland",1,[977]
+"adidas Headquarters, Adi-Dassler-Straße, Herzogenaurach, Germany",1,[978]
+Singapore,1,[980]
+"Navy Pier, Inc, East Grand Avenue, Chicago, IL, United States",1,[983]
+"Cristo Redentor, Santa Teresa, Rio de Janeiro, Brazil",1,[984]
+Nicosia,1,[985]
+"Albury, NSW, Australia",1,[986]
+"Regina, SK, Canada",1,[989]
+"Nara, Japan",1,[990]
+"Alcatraz Island, San Francisco, CA, United States",1,[993]
+"Margaret River, WA, Australia",1,[995]
+"Mount Bartle Frere, Wooroonooran, QLD, Australia",1,[997]
+"Fenway Park, Yawkey Way, Boston, MA, United States",1,[998]
+"Museum Of Contemporary Art Chicago, East Chicago Avenue, Chicago, IL, United States",1,[1001]
+"Russia, Moscow, Lubyanka Square",1,[1004]
+"Coventry, Connecticut, United States",1,[1008]
+"Derbyshire, United Kingdom",1,[1010]
+"Central Park, Perth, Western Australia, Australia",1,[1012]
+"Shark Bay, Western Australia, Australia",1,[1014]
+"Calgary, Alberta, Canada",1,[1021]
+"Castlemaine Art Gallery & Historical Museum, Lyttleton Street, Castlemaine, Victoria, Australia",1,[1022]
+"Lichfield, United Kingdom",1,[1023]
+"Bundanon, Illaroo, NSW, Australia",1,[1025]
+"University of Technology Sydney, Broadway, Ultimo, New South Wales, Australia",1,[1026]
+"The Improv, Melrose Avenue, Los Angeles, CA, United States",1,[1028]
+"Mount Olympus, Olimpos, Larisa, Greece",1,[1030]
+"The Australian Ballet, Kavanagh Street, Southbank, Victoria, Australia",1,[1031]
+"Cobb+Co Museum, Lindsay Street, Toowoomba, QLD, Australia",1,[1032]
+"Thermopylae, Phthiotis, Greece",1,[1033]
+"ST. James Church, King St, Sydney, New South Wales, Australia",1,[1035]
+"Buckingham Fountain, South Columbus Drive, Chicago, IL, United States",1,[1048]
+"Woy Woy, NSW, Australia",1,[1052]
+"Alexandria, VA, United States",1,[1055]
+"Grand Ole Opry, Opryland Drive, Nashville, TN, United States",1,[1058]
+"Dhaka, Dhaka Division, Bangladesh",1,[1063]
+"Smithsonian Institution, Jefferson Drive Southwest, Washington, DC, United States",1,[1067]
+"Palm Beach, NSW, Australia",1,[1068]
+"The Colosseum, Piazza del Colosseo, Rome, Italy",1,[1076]
+"Kilkenny, Ireland",1,[1077]
+Puerto Rico,1,[1078]
+"Kirribilli House, Kirribilli, NSW, Australia",1,[1079]
+"Boston Tea Party Memorial, Harborwalk, Boston, MA, United States",1,[1080]
+"East Lansing, Michigan, United States",1,[1081]
+"Indio, CA, United States",1,[1085]
+"Paramaribo, Paramaribo District, Suriname",1,[1086]
+"Big Ben, London, United Kingdom",1,[1089]
+"Orleans, France",1,[1094]
+"Grand Rapids, MI, United States",1,[1097]
+"Tower Bridge, London, United Kingdom",1,[1098]
+"Basel, Switzerland",1,[1099]
+"Theatre Royal (Hobart), Campbell Street, Hobart, Tasmania, Australia",1,[1100]
+"ALL Saints Anglican Church, Wickham Terrace, Brisbane, Queensland, Australia",1,[1102]
+"Lancaster, United Kingdom",1,[1103]
+"The Australian National University, Canberra, ACT, Australia",1,[1104]
+"Dundee, United Kingdom",1,[1108]
+"The White House, Pennsylvania Avenue Northwest, Washington, D.C., DC, United States",1,[1110]
+"Hollywood Bowl, North Highland Avenue, Los Angeles, CA, United States",1,[1115]
+"Southampton Football Club, Britannia Road, Southampton, United Kingdom",1,[1119]
+"Joshua Tree National Park, Southern California, United States",1,[1121]
+"Derry, United Kingdom",1,[1123]
+"Museum of Tropical Queensland, Flinders Street, Townsville City, Queensland, Australia",1,[1124]
+"Andersonville National Historic Site, Pow Road, Andersonville, GA, United States",1,[1128]
+"Monaco-Ville, Monaco",1,[1132]
+"Monterey, California, United States",1,[1141]
+"Montpelier, VT, United States",1,[1143]
+"Lighthouse of Alexandria, Alexandria, Alexandria Governorate, Egypt",1,[1146]
+"Grenfell, NSW, Australia",1,[1153]
+Luxembourg,1,[1157]
+"Rome, NY, United States",1,[1161]
+"Guggenheim Museum, 5th Avenue, NY, United States",1,[1166]
+"Abbey Road Studios, Abbey Road, London, England, United Kingdom",1,[1169]
+"Library of Congress, Independence Avenue Southeast, Washington, DC, United States",1,[1172]
+"Woodford, QLD, Australia",1,[1176]
+"Sydney Observatory, Upper Fort Street, Sydney, New South Wales, Australia",1,[1180]
+"Lynbrook, NY, United States",1,[1181]
+"National Mall, Washington, DC, United States",1,[1183]
+"Aurora Pl, Bent Street, Sydney, New South Wales, Australia",1,[1184]
+"New Norfolk, Tasmania, Australia",1,[1186]
+"Newark, NJ, United States",1,[1187]
+"Vicksburg National Military Park, Vicksburg, MS, United States",1,[1188]
+"The Annandale Lodge, Johnston Street, Annandale, New South Wales, Australia",1,[1192]
+"Australian Film Television and Radio School, Lang Road, Moore Park, NSW, Australia",1,[1194]
+"Fargo, ND, United States",1,[1196]
+"Plaza Hotel, 5th Avenue, New York, NY, United States",1,[1197]
+"Sydney Opera House, Sydney, NSW, Australia",1,[1203]
+"Macy's, West 34th Street, New York, NY, United States",1,[1204]
+"Lake Burley Griffin, Canberra, ACT, Australia",1,[1207]
+"Washington Monument, 15th Street Northwest, Washington, DC, United States",1,[1211]
+"Newstead House, Brisbane, QLD, Australia",1,[1212]
+"Springfield, MA, United States",1,[1215]
+"Yellowstone National Park, Wyoming, United States",1,[1218]
+"Chrysler Building, Lexington Avenue, New York, NY, United States",1,[1222]
+"Petra, Ma'an, Jordan",1,[1223]
+"Santa Monica, CA, United States",1,[1228]
+"St. Augustine, FL, United States",1,[1231]
+"Taj Mahal, Agra, Uttar Pradesh, India",1,[1234]
+"Cincinnati, OH, United States",1,[1235]
+Grand Palace Bangkok Thailand,1,[1237]
+"Edmonton, Alberta, Canada",1,[1240]
+"Beacon Theatre, Broadway, NY, United States",1,[1243]
+"Sydney Opera House, Sydney, New South Wales, Australia",1,[1245]
+"Melrose Ave, West Hollywood, CA, United States",1,[1247]
+"Sphinx, Giza, Egypt",1,[1249]
+"Lincoln Memorial, Lincoln Memorial Circle NW, Washington, DC, United States",1,[1252]
+"Downey, CA, United States",1,[1253]
+"Jacksonville, FL, United States",1,[1255]
+"Dolby Theatre, Hollywood Boulevard, Los Angeles, CA, United States, North America",1,[1258]
+"Point Pleasant, WV, United States",1,[1259]
+"Madison, WI, United States",1,[1262]
+"Malibu, CA, United States",1,[1263]
+"Notre Dame Cathedral, Parvis Notre-Dame - place Jean-Paul-II, Paris, France",1,[1264]
+"Lake Placid, NY, United States",1,[1265]
+"Grand Central Terminal, East 42nd Street, New York, NY, United States",1,[1266]
+"Mansfield, Victoria, Australia",1,[1267]
+"Ouagadougou, Centre, Burkina Faso",1,[1269]
+"Indiana State University, North 7th Street, Terre Haute, Indiana, United States",1,[1270]
+"Escondido, CA, United States",1,[1271]
+"Bismarck, ND, United States",1,[1273]
+"Albuquerque, New Mexico, United States",1,[1276]
+"Greenwich Village, New York, NY, United States",1,[1277]
+"Angel Falls, Gran Sabana, Bolívar, Venezuela",1,[1278]
+"Leaning Tower of Pisa, Piazza del Duomo, Pisa, Italy",1,[1280]
+"The Big Lobster, Princes Highway, Kingston SE, South Australia, Australia",1,[1281]
+"Mariana Trench National Wildlife Refuge, United States",1,[1285]
+"Everglades National Park, Monroe, FL, United States",1,[1286]
+"Gary, Indiana, United States",1,[1287]
+"AmericanAirlines Arena, Biscayne Boulevard, Miami, FL, United States",1,[1288]
+"World Golf Village Renaissance St. Augustine Resort, South Legacy Trail, St. Augustine, FL, United States",1,[1289]
+"Russia, Lake Baikal",1,[1290]
+"Gateway Arch, St. Louis, MO, United States",1,[1292]
+"Daytona International Speedway, Daytona Beach, Florida, United States",1,[1294]
+"Mount St. Helens, Washington, United States",1,[1295]
+"Munster, Indiana, United States",1,[1296]
+"Loch Ness, Scotland, United Kingdom",1,[1297]
+"Denali National Park, Alaska, United States",1,[1298]
+"Gdańsk, Poland",1,[1299]
+"The University of Oklahoma, Parrington Oval, Norman, OK, United States",1,[1300]
+"Edison, NJ, United States",1,[1303]
+"Manchester, TN, United States",1,[1306]
+"Uluru / Ayers Rock, Uluru, Northern Territory, Australia",1,[1307]
+"Big Sur, California, United States",1,[1309]
+"Hollywood, Los Angeles, CA, United States",1,[1312]
+"Carnegie Hall, 7th Avenue, NYC, NY, United States",1,[1313]
+"Mauna Loa, South Kona, HI, United States",1,[1314]
+"Seoul Olympic Park and Museum, Seoul, South Korea",1,[1315]
+"Pearl District, Portland, OR, United States",1,[1317]
+"International Tennis Hall of Fame & Museum, Bellevue Avenue, Newport, RI, United States",1,[1318]
+"Salinas, California, United States",1,[1320]
+"Cloud Gate, East Randolph Street, Chicago, IL, United States, North America",1,[1321]
+"Marrakesh, Marrakesh-Tensift-Al Haouz, Morocco",1,[1322]
+"Aloha Stadium, Salt Lake Boulevard, Honolulu, HI, United States",1,[1323]
+"Rock of Gibraltar, Gibraltar",1,[1324]
+"Plzen, Czech Republic",1,[1325]
+"Empire State Building, 5th Avenue, New York, NY, United States",1,[1326]
+"Minnesota State University Mankato, Mankato, Minnesota 56001, United States",1,[1327]
+"Edinburgh, Scotland, United Kingdom",1,[1328]
+"Mount Vernon, Fairfax, VA, United States",1,[1329]
+"Graceland, Elvis Presley Boulevard, Memphis, TN, United States",1,[1330]
+"Astrodome, Houston, TX, United States",1,[1331]
+"Los Angeles, California, United States",1,[1332]
+"Hobart, Tasmania, Australia",1,[1334]
+"New Brunswick, New Jersey, United States",1,[1335]
+"White Cliffs of Dover, Lower Road West, Dover, United Kingdom",1,[1337]
+"Dover International Speedway, Korean War Veterans Memorial Highway, Dover, DE, United States",1,[1338]
+"West Edmonton Mall, 170 St NW, Edmonton, Alberta, Canada",1,[1339]
+"Winnipeg, Manitoba, Canada",1,[1341]
+"Panama Canal, Panama",1,[1343]
+"Palo Alto, CA, United States",1,[1345]
+"Vancouver, British Columbia, Canada",1,[1346]
+"St Paul, MN, United States",1,[1347]
+"Six Flags Great Adventure, Six Flags Blvd, Jackson, NJ, United States",1,[1349]
+"Harvey, IL, United States",1,[1350]
+"Tiffany & Co., 5th Avenue, New York City, NY, United States",1,[1351]
+"Melbourne Park, Batman Avenue, Melbourne, Victoria, Australia",1,[1352]
+"Rogers, AR, United States",1,[1355]
+"Hanover, NH, United States",1,[1356]
+"North Caldwell, NJ, United States",1,[1358]
+"Lakeland, FL, United States",1,[1361]
+"New York City, New York, United States",1,[1362]
+"Stade Roland Garros, Avenue Gordon Bennett, Paris, France",1,[1363]
+"Lake Placid, New York, United States",1,[1366]
+"Lincoln Center for the Performing Arts, Lincoln Center Plaza, NYC, NY, United States",1,[1370]
+"Mavericks, San Mateo, CA, United States",1,[1371]
+"Shanghai, China",1,[1373]
+"National Soccer Hall of Fame, West End, NY, United States",1,[1377]
+"Liverpool, UK",1,[1380]
+"Texas Motor Speedway, Lone Star Circle, Fort Worth, TX, United States",1,[1382]
+"Jutland, Farsø, Denmark",1,[1383]
+"Upper West Side, Manhattan, New York, NY, United States",1,[1386]
+"Ipanema, Rio - Rio de Janeiro, Brazil",1,[1388]
+Germany,1,[1392]
+"Tampa Bay, FL, United States",1,[1395]
+"Camp Nou, Barcelona, Spain",1,[1396]
+"Rothbury, MI, United States",1,[1397]
+"Foxborough, MA, United States",1,[1399]
+"Ben Hill Griffin Stadium, Gale Lemerand Drive, Gainesville, FL, United States",1,[1400]
+"Southern Illinois University Carbondale, Carbondale, Illinois, United States",1,[1404]
+"Sugar Land, TX, United States",1,[1405]
+"Soldier Field, Museum Campus Drive, Chicago, IL, United States",1,[1406]
+"Arlington, TX, United States",1,[1411]
+"Augusta National Golf Club, Washington Road, Augusta, Georgia, United States",1,[1412]
+"Leonardo, Atlantic Highlands, New Jersey, United States",1,[1413]
+Kanchanaburi Thailand,1,[1414]
+"Royal Melbourne Golf Club, Cheltenham Road, Melbourne, Victoria, Australia",1,[1415]
+"Tulsa, OK, United States",1,[1416]
+"Walt Disney World Resort, Orlando, Florida, United States",1,[1417]
+"Target Field, Minneapolis, MN, United States",1,[1420]
+"Saigon, Ho Chi Minh City, Vietnam",1,[1421]
+"Marcy Open School, 5th Avenue Southeast, Minneapolis, MN, United States",1,[1425]
+"Sydney Olympic Park Tennis Centre, Rod Laver Drive, Sydney, New South Wales, Australia",1,[1426]
+"Santa Ana, CA, United States",1,[1428]
+"Bel Air, Los Angeles, CA, United States",1,[1429]
+"Cowal Highland Gathering, Dunoon, United Kingdom",1,[1430]
+"Sitka, AK, United States",1,[1431]
+"Reno, NV, United States",1,[1434]
+"Arthur Ashe Stadium, Queens, NY, United States",1,[1435]
+"Pebble Beach Golf Club, 17 Mile Drive, Pebble Beach, CA, United States",1,[1436]
+"Radio City Music Hall, Avenue of the Americas, NYC, NY, United States",1,[1437]
+"Bedford-Stuyvesant, Brooklyn, NY, United States",1,[1439]
+"University of South Carolina, Columbia, South Carolina, United States",1,[1440]
+"Red Rocks Amphitheatre, County Road 93, Morrison, CO, United States",1,[1442]
+"Yankee Stadium, East 161st Street, Bronx, NY, United States",1,[1448]
+"Birmingham, England, United Kingdom",1,[1450]
+"Black Rock Desert, NV, United States",1,[1451]
+"Claremore, Oklahoma, United States",1,[1452]
+"Amarillo, TX, United States",1,[1453]
+"Oahu, United States",1,[1462]
+"Madison County, Iowa, United States",1,[1464]
+"Gangnam-gu, Seoul, South Korea",1,[1468]
+"Alcatraz Island, United States",1,[1469]
+"Princeton University, Princeton, NJ, United States",1,[1472]

@@ -13,6 +13,7 @@ import datetime
 import random
 import copy
 import sys
+import csv
 from types import SimpleNamespace
 
 lastsave = SimpleNamespace(prev=None)
@@ -759,6 +760,100 @@ def main():
         if not checksave(): return
         root.destroy()
 
+    def findquestioncaseback():
+        nonlocal frm1, lst, last, stopped, root
+        if lst == []: return
+        stopped = True
+        searchto = simpledialog.askstring("Find backwards (case-sensitive)", "Find text from:")
+        if not searchto: root.after(300, doupdate); return
+        soff = frm1.index(tk.ACTIVE)
+        idx = soff-1
+        found = False
+        l = lst[:soff]
+        l.reverse()
+        for item in l:
+            if searchto in item["title"]:
+                found = True
+                break
+            idx += 1
+        if not found:
+            messagebox.showinfo("Find backwards (case-sensitive)", "Item not found")
+            root.after(300, doupdate)
+            return
+        
+        frm1.see(idx)
+        frm1.selection_clear(0, tk.END)
+        frm1.selection_set(idx)
+        frm1.event_generate("<<ListboxSelect>>")
+        frm1.activate(idx)
+        #frm1.
+        last = -1
+        updatelst(idx)
+        last = idx
+        root.after(300, doupdate)
+
+    def findquestionback():
+        nonlocal frm1, lst, last, stopped, root
+        if lst == []: return
+        stopped = True
+        searchto = simpledialog.askstring("Find backwards", "Find text from:")
+        if not searchto: root.after(300, doupdate); return
+        soff = frm1.index(tk.ACTIVE)
+        idx = soff-1
+        found = False
+        l = lst[:soff]
+        l.reverse()
+        for item in l:
+            if searchto.lower() in item["title"].lower():
+                found = True
+                break
+            idx -= 1
+        if not found:
+            messagebox.showinfo("Find backwards", "Item not found")
+            root.after(300, doupdate)
+            return
+        
+        frm1.see(idx)
+        frm1.selection_clear(0, tk.END)
+        frm1.selection_set(idx)
+        frm1.event_generate("<<ListboxSelect>>")
+        frm1.activate(idx)
+        #frm1.
+        last = -1
+        updatelst(idx)
+        last = idx
+        root.after(300, doupdate)
+
+    def findquestioncase():
+        nonlocal frm1, lst, last, stopped, root
+        if lst == []: return
+        stopped = True
+        searchto = simpledialog.askstring("Find (case-sensitive)", "Find text from:")
+        if not searchto: root.after(300, doupdate); return
+        soff = frm1.index(tk.ACTIVE)
+        idx = soff+1
+        found = False
+        for item in lst[soff+1:]:
+            if searchto in item["title"]:
+                found = True
+                break
+            idx += 1
+        if not found:
+            messagebox.showinfo("Find (case-sensitive)", "Item not found")
+            root.after(300, doupdate)
+            return
+        
+        frm1.see(idx)
+        frm1.selection_clear(0, tk.END)
+        frm1.selection_set(idx)
+        frm1.event_generate("<<ListboxSelect>>")
+        frm1.activate(idx)
+        #frm1.
+        last = -1
+        updatelst(idx)
+        last = idx
+        root.after(300, doupdate)
+
     def findquestion():
         nonlocal frm1, lst, last, stopped, root
         if lst == []: return
@@ -766,10 +861,134 @@ def main():
         searchto = simpledialog.askstring("Find", "Find text from:")
         if not searchto: root.after(300, doupdate); return
         soff = frm1.index(tk.ACTIVE)
-        idx = soff
+        idx = soff+1
         found = False
-        for item in lst[soff:]:
-            if searchto in item["title"]:
+        for item in lst[soff+1:]:
+            if searchto.lower() in item["title"].lower():
+                found = True
+                break
+            idx += 1
+        if not found:
+            messagebox.showinfo("Find", "Item not found")
+            root.after(300, doupdate)
+            return
+        
+        frm1.see(idx)
+        frm1.selection_clear(0, tk.END)
+        frm1.selection_set(idx)
+        frm1.event_generate("<<ListboxSelect>>")
+        frm1.activate(idx)
+        #frm1.
+        last = -1
+        updatelst(idx)
+        last = idx
+        root.after(300, doupdate)
+
+    def findhintscaseback():
+        nonlocal frm1, lst, last, stopped, root
+        if lst == []: return
+        stopped = True
+        searchto = simpledialog.askstring("Find backwards (case-sensitive)", "Find text from:")
+        if not searchto: root.after(300, doupdate); return
+        soff = frm1.index(tk.ACTIVE)
+        idx = soff-1
+        found = False
+        l = lst[:soff]
+        l.reverse()
+        for item in l:
+            if searchto in item["hint"]:
+                found = True
+                break
+            idx += 1
+        if not found:
+            messagebox.showinfo("Find backwards (case-sensitive)", "Item not found")
+            root.after(300, doupdate)
+            return
+        
+        frm1.see(idx)
+        frm1.selection_clear(0, tk.END)
+        frm1.selection_set(idx)
+        frm1.event_generate("<<ListboxSelect>>")
+        frm1.activate(idx)
+        #frm1.
+        last = -1
+        updatelst(idx)
+        last = idx
+        root.after(300, doupdate)
+
+    def findhintsback():
+        nonlocal frm1, lst, last, stopped, root
+        if lst == []: return
+        stopped = True
+        searchto = simpledialog.askstring("Find backwards", "Find text from:")
+        if not searchto: root.after(300, doupdate); return
+        soff = frm1.index(tk.ACTIVE)
+        idx = soff-1
+        found = False
+        l = lst[:soff]
+        l.reverse()
+        for item in l:
+            if searchto.lower() in item["hint"].lower():
+                found = True
+                break
+            idx -= 1
+        if not found:
+            messagebox.showinfo("Find backwards", "Item not found")
+            root.after(300, doupdate)
+            return
+        
+        frm1.see(idx)
+        frm1.selection_clear(0, tk.END)
+        frm1.selection_set(idx)
+        frm1.event_generate("<<ListboxSelect>>")
+        frm1.activate(idx)
+        #frm1.
+        last = -1
+        updatelst(idx)
+        last = idx
+        root.after(300, doupdate)
+
+    def findhintscase():
+        nonlocal frm1, lst, last, stopped, root
+        if lst == []: return
+        stopped = True
+        searchto = simpledialog.askstring("Find (case-sensitive)", "Find text from:")
+        if not searchto: root.after(300, doupdate); return
+        soff = frm1.index(tk.ACTIVE)
+        idx = soff+1
+        found = False
+        for item in lst[soff+1:]:
+            if searchto in item["hint"]:
+                found = True
+                break
+            idx += 1
+        if not found:
+            messagebox.showinfo("Find (case-sensitive)", "Item not found")
+            root.after(300, doupdate)
+            return
+        
+        frm1.see(idx)
+        frm1.selection_clear(0, tk.END)
+        frm1.selection_set(idx)
+        frm1.event_generate("<<ListboxSelect>>")
+        frm1.activate(idx)
+        #frm1.
+        last = -1
+        updatelst(idx)
+        last = idx
+        root.after(300, doupdate)
+
+    def findhints():
+        nonlocal frm1, lst, last, stopped, root
+        if lst == []: return
+        stopped = True
+        searchto = simpledialog.askstring("Find", "Find text from:")
+        if not searchto: root.after(300, doupdate); return
+        soff = frm1.index(tk.ACTIVE)
+        idx = soff+1
+        found = False
+        for item in lst[soff+1:]:
+            if searchto.lower() in item["hint"].lower():
                 found = True
                 break
             idx += 1
@@ -812,11 +1031,41 @@ def main():
         last = goto
         root.after(300, doupdate)
 
+    def exportcsv():
+        nonlocal lst, lastname
+        if lst == []: return
+        if not checksave(): return
+        fnd = tk.filedialog.asksaveasfilename(title="Save Smarty Pins CSV file.", filetypes=(("CSV sheet", "*.csv"),))
+        if not fnd: return
+        try:
+            data = open(fnd, "w")
+            fields = ['answer_name', 'counts', 'indexlist']
+            writer = csv.DictWriter(data, fieldnames=fields)
+            cnt = 0
+            ansmap = {}
+            for q in lst:
+                a = q["answer"]["title"]
+                if not a in ansmap:
+                    ansmap[a] = {"index": [cnt], "count": 1}
+                else:
+                    ansmap[a]["index"].append(cnt)
+                    ansmap[a]["count"] += 1
+                cnt += 1
+            writer.writeheader()
+
+            for k in sorted(ansmap, key=lambda k: ansmap[k]["count"], reverse=True):
+                writer.writerow({"answer_name": k, "counts": ansmap[k]["count"], "indexlist": ansmap[k]["index"]})
+        except Exception as e:
+            print(f"Cannot export: {e}")
+            raise
+        print(f"CSV exported as {fnd}")
+
     filemenu.add_command(label="New", command=newfile)
     filemenu.add_command(label="New Question", command=newquestion)
     filemenu.add_command(label="Open", command=openfile)
     filemenu.add_command(label="Save", command=savefile)
     filemenu.add_command(label="Save As", command=savefileas)
+    filemenu.add_command(label="Export as CSV", command=exportcsv)
     filemenu.add_command(label="Export item", command=exportitem)
     filemenu.add_command(label="Export all", command=exportitems)
     filemenu.add_command(label="Exit", command=doquit)
@@ -824,6 +1073,13 @@ def main():
 
     datamenu = tk.Menu(menu, tearoff=0)
     datamenu.add_command(label="Find", command=findquestion)
+    datamenu.add_command(label="Find (case-sensitive)", command=findquestioncase)
+    datamenu.add_command(label="Find Backwards", command=findquestionback)
+    datamenu.add_command(label="Find Backwards (case-sensitive)", command=findquestioncaseback)
+    datamenu.add_command(label="Find by Hints", command=findhints)
+    datamenu.add_command(label="Find by Hints (case-sensitive)", command=findhintscase)
+    datamenu.add_command(label="Find by Hints Backwards", command=findhintsback)
+    datamenu.add_command(label="Find by Hints Backwards (case-sensitive)", command=findhintscaseback)
     datamenu.add_command(label="Goto", command=gotoquestion)
 
     menu.add_cascade(label="File", menu=filemenu)
