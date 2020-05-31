@@ -12,6 +12,7 @@ import os, glob
 import datetime
 import random
 import copy
+import sys
 from types import SimpleNamespace
 
 lastsave = SimpleNamespace(prev=None)
@@ -578,13 +579,16 @@ def main():
         stopped = False
         root.after(1, doupdate)
 
-    def openfile():
+    def openfile(filename=None):
         nonlocal lst, frm1, root, stopped, last, lastname
         global lastsave
         if not checksave(): return
         stopped = True
-        fnd = tk.filedialog.askopenfilename(title="Open Smarty Pins question file.", filetypes=(("Smarty Pins JSON file", "*.json"),))
-        if not fnd: root.after(300, opendelay); return
+        if filename:
+            fnd = filename
+        else:
+            fnd = tk.filedialog.askopenfilename(title="Open Smarty Pins question file.", filetypes=(("Smarty Pins JSON file", "*.json"),))
+            if not fnd: root.after(300, opendelay); return
         lst = []
         lastsave.prev = None
         try:
@@ -826,6 +830,8 @@ def main():
     menu.add_cascade(label="Data", menu=datamenu)
 
     root.config(menu=menu)
+    if len(sys.argv) >= 2:
+        openfile(sys.argv[1])
     root.after(1, tick)
     root.mainloop()
 
