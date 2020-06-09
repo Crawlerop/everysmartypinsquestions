@@ -67,7 +67,7 @@ def main():
                         margin: 0;
                     }
                     html, body, #mapid {
-                        height: 100%;
+                        height: 97.25%;
                         width: 100%;
                     }
                 </style>
@@ -75,6 +75,8 @@ def main():
             </head>
             <body>
                 <div id="mapid"></div>
+                <div id="curpos">Current Position</div>
+		        <div id="clickedpos">Clicked Position</div>
                 <script>
                     var data = L.layerGroup()
                 
@@ -99,12 +101,48 @@ def main():
 
                     gmapsattr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' + '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="https://maps.google.com/">Google Maps</a>'
 
+                    esriattr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' + '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="https://www.esri.com/">ESRI</a>'
+                    
+                    osmattr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+
                     normal = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
                         maxZoom: 21,
                         attribution: mapboxattr,
                         id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
                         tileSize: 512,
                         zoomOffset: -1
+                    })
+
+                    mdefault = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                        maxZoom: 21,
+                        attribution: mapboxattr,
+                        id: 'mapbox/streets-v11',
+                        tileSize: 512,
+                        zoomOffset: -1
+                    })
+
+                    esrinormal = L.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+                        maxZoom: 21,
+                        attribution: esriattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 256,
+                        zoomOffset: 0
+                    })
+
+                    esriterrain = L.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+                        maxZoom: 21,
+                        attribution: esriattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 256,
+                        zoomOffset: 0
+                    })
+
+                    osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 21,
+                        attribution: osmattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 256,
+                        zoomOffset: 0
                     })
 
                     satellite = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
@@ -115,7 +153,15 @@ def main():
                         zoomOffset: -1
                     })
 
-                    gmapsnormal = L.tileLayer('https://www.google.com/maps/vt?pb=!1m4!1m3!1i{z}!2i{x}!3i{y}!2m2!2sm!3i504221335!3m7!2sen-US!5i1105!12m4!1i68!2m2!1sset!2sTerrain!5m1!5f4.0!23i1358902', {
+                    satellitenotext = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                        maxZoom: 21,
+                        attribution: mapboxattr,
+                        id: 'user12435235124125235824592457/ckb7ik2nf4rel1ip61enm2h23',
+                        tileSize: 512,
+                        zoomOffset: -1
+                    })
+
+                    gmapsnormal = L.tileLayer('https://www.google.com/maps/vt/pb=!1m4!1m3!1i{z}!2i{x}!3i{y}!2m1!1i0!3m2!2sen-US!5i1106!5m1!5f4.0!23i1358902', {
                         maxZoom: 21,
                         attribution: gmapsattr,
                         id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
@@ -123,7 +169,40 @@ def main():
                         zoomOffset: 0
                     })
 
+                    gmapsbold = L.tileLayer('https://www.google.com/maps/vt?pb=!1m4!1m3!1i{z}!2i{x}!3i{y}!2m2!2sm!3i504221335!3m7!2sen-US!5i1105!12m4!1i68!2m2!1sset!2sTerrain!5m1!5f4.0!23i1358902', {
+                        maxZoom: 21,
+                        attribution: gmapsattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 256,
+                        zoomOffset: 0
+                    })
+
+                    esrisatellite = L.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                        maxZoom: 21,
+                        attribution: esriattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 256,
+                        zoomOffset: 0
+                    })                    
+
+                    esrisatellitealt = L.tileLayer('https://clarity.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                        maxZoom: 21,
+                        attribution: esriattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 256,
+                        zoomOffset: 0
+                    })
+
                     gmapssatellite = L.tileLayer('https://mt{s}.googleapis.com/vt?lyrs=y&hl=en-US&x={x}&y={y}&z={z}', {
+                        maxZoom: 21,
+                        attribution: gmapsattr,
+                        id: 'user12435235124125235824592457/ckanekpxi1o3y1ipkm8tl6v3i',
+                        tileSize: 256,
+                        zoomOffset: 0,
+                        subdomains: ["0", "1", "2", "3"]
+                    })
+
+                    gmapssatellitenotext = L.tileLayer('https://mt{s}.googleapis.com/vt?lyrs=s&hl=en-US&x={x}&y={y}&z={z}', {
                         maxZoom: 21,
                         attribution: gmapsattr,
                         id: 'user12435235124125235824592457/ckanekpxi1o3y1ipkm8tl6v3i',
@@ -147,9 +226,18 @@ def main():
 
                     var layernames = {
                         "Mapbox Normal": normal,
+                        "Mapbox Streets": mdefault,
                         "Google Maps Normal": gmapsnormal,
+                        "Google Maps Bold": gmapsbold,
+                        "OSM": osm,
+                        "ESRI Normal": esrinormal,
+                        "ESRI Terrain": esriterrain,
                         "Mapbox Satellite": satellite,
-                        "Google Maps Satellite": gmapssatellite
+                        "Mapbox Satellite (no label)": satellitenotext,
+                        "Google Maps Satellite": gmapssatellite,
+                        "Google Maps Satellite (no label)": gmapssatellitenotext,
+                        "ESRI Satellite": esrisatellite,
+                        "ESRI Satellite (alt)": esrisatellitealt,
                     }
                     
                     var dataset = {
@@ -157,7 +245,16 @@ def main():
                     }
                 
                     layers = L.control.layers(layernames, dataset)
-                    layers.addTo(mymap)		
+                    layers.addTo(mymap)	
+
+                    mymap.on('click', function(e) {
+                        document.getElementById("clickedpos").innerText = "ClickedPos: " + e.latlng.lat + ", " + e.latlng.lng + " ClickedZoom: " + mymap.getZoom()
+                    });	
+
+                    mymap.addEventListener('mousemove', function(e) {
+                        document.getElementById("curpos").innerText = "Pos: " + e.latlng.lat + ", " + e.latlng.lng + " Zoom: " + mymap.getZoom()
+                    });
+
                 </script>
             </body>
         </html>
