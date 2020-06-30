@@ -50,6 +50,13 @@ def checkpossibility(s):
 
 def main():
 
+    alloweds = []
+    for r in range(ord("a"), ord("z")+1):
+        alloweds.append(chr(r))
+    for r in range(ord("0"), ord("9")+1):
+        alloweds.append(chr(r))
+    alloweds.append("-")
+
     template = ''' 
     <!DOCTYPE html>
         <html>
@@ -466,7 +473,12 @@ def main():
             lst[frm1.index(tk.ACTIVE)]["answer"]["location"]["lng"] = float(lng)
             lst[frm1.index(tk.ACTIVE)]["title"] = question.get()
             #s = lst[frm1.index(tk.ACTIVE)]["slug"]
-            lst[frm1.index(tk.ACTIVE)]["slug"] = "-".join(question.get().split()[:6]).lower().replace("'", "-")
+            chtxt = "-".join(question.get().split()[:6]).lower().replace("'", "-")
+            chout = ""
+            for cht in chtxt:
+                if cht in alloweds:
+                    chout += cht
+            lst[frm1.index(tk.ACTIVE)]["slug"] = chout
             #d = lst[frm1.index(tk.ACTIVE)]["slug"]
             #if d != s:
                 #print(f"{s} -> {d}")
@@ -678,7 +690,7 @@ def main():
         root.after(1, doupdate)
 
     def openfile(filename=None):
-        nonlocal lst, frm1, root, stopped, last, lastname
+        nonlocal lst, frm1, root, stopped, last, lastname, alloweds
         global lastsave
         if not checksave(): return
         stopped = True
@@ -708,6 +720,20 @@ def main():
             return
 
         lst = dta["items"]
+        lsti = []
+        for lstc in lst:
+            chtxt = "-".join(lstc["title"].split()[:6]).lower().replace("'", "-")
+            chout = ""
+            for cht in chtxt:
+                if cht in alloweds:
+                    chout += cht
+            lstc["slug"] = chout
+            #print(chout)
+            lsti.append(lstc)
+            #print(chout)
+        lst = lsti
+        #print(lst)
+            
         lastsave.prev = copy.deepcopy({"a": lst})
 
         frm1.delete(0, tk.END)
