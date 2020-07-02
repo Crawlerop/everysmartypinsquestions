@@ -77,6 +77,18 @@ def main():
                         height: 97.25%;
                         width: 100%;
                     }
+                    textarea.righttext {
+                        position:absolute;
+                        right:1px;
+                        bottom:15px;
+                        resize:none;
+                    }
+                    button.rightbutton {
+                        position:absolute;
+                        right:1px;
+                        bottom:15px;
+                        resize:none;
+                    }
                 </style>
                 
             </head>
@@ -84,6 +96,8 @@ def main():
                 <div id="mapid"></div>
                 <div id="curpos">Current Position</div>
 		        <div id="clickedpos">Clicked Position</div>
+                <textarea class="righttext" name="llzoom" id="go" cols="32" rows="1"></textarea>
+		        <button type="button" class="rightbutton" onclick="gozoom()">Go</button>
                 <script>
                     var data = L.layerGroup()
                 
@@ -261,6 +275,20 @@ def main():
                     mymap.addEventListener('mousemove', function(e) {
                         document.getElementById("curpos").innerText = "Pos: " + e.latlng.lat + ", " + e.latlng.lng + " Zoom: " + mymap.getZoom()
                     });
+
+                    function gozoom() {
+			            msv = document.getElementById("go").value.split(", ")
+			            if (msv[0] == document.getElementById("go").value) {
+				            msv = document.getElementById("go").value.split(",")
+				            if (msv[0] == document.getElementById("go").value) {
+					            return
+				            }
+			            }
+                        if (msv[2].slice(-1) !== "z") {
+                            return
+                        }
+			            mymap.setView([parseFloat(msv[0]), parseFloat(msv[1])], parseInt(msv[2].slice(0,-1)))
+		            }
 
                 </script>
             </body>
