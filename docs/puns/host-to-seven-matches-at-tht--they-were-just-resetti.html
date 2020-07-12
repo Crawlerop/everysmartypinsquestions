@@ -83,6 +83,14 @@
                         zoomOffset: -1
                     })
 
+                    mgray = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                        maxZoom: 21,
+                        attribution: mapboxattr,
+                        id: 'mapbox/light-v9',
+                        tileSize: 512,
+                        zoomOffset: -1
+                    })
+
                     esrinormal = L.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
                         maxZoom: 21,
                         attribution: esriattr,
@@ -124,6 +132,30 @@
                     })
 
                     gmapsnormal = L.tileLayer('https://www.google.com/maps/vt/pb=!1m4!1m3!1i{z}!2i{x}!3i{y}!2m1!1i0!3m2!2sen-US!5i1106!5m1!5f4.0!23i1358902', {
+                        maxZoom: 21,
+                        attribution: gmapsattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 256,
+                        zoomOffset: 0
+                    })
+
+                    gmapsvue = L.tileLayer('https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i{z}!2i{x}!3i{y}!4i256!2m3!1e0!2sm!3i520236120!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjF8cy5lOmwudC5mfHAuYzojZmY0NDQ0NDQscy50OjV8cC5jOiNmZmYyZjJmMixzLnQ6MnxwLnY6b2ZmLHMudDozfHAuczotMTAwfHAubDo0NSxzLnQ6NDl8cC52OnNpbXBsaWZpZWQscy50OjUwfHMuZTpsLml8cC52Om9mZixzLnQ6NHxwLnY6b2ZmLHMudDo2fHAuYzojZmYyNjJlNDV8cC52Om9uLHMudDo2fHMuZTpsfHAudjpvZmY!4e0!5m1!5f4.0', {
+                        maxZoom: 21,
+                        attribution: gmapsattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 256,
+                        zoomOffset: 0
+                    })
+
+                    gmapsfb = L.tileLayer('https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i{z}!2i{x}!3i{y}!4i256!2m3!1e0!2sm!3i520236108!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmwuaXxwLnY6b2ZmLHMudDoxfHAudjpvbixzLnQ6NXxwLmM6I2ZmZThlOWU5LHMudDoyfHMuZTpnfHAuYzojZmZlOGU5ZTkscy50OjQwfHAuYzojZmZiYWQyOTQscy50OjQwfHMuZTpsfHAudjpvZmYscy50OjQ5fHMuZTpnLmZ8cC5jOiNmZmZmZmZmZixzLnQ6NDl8cy5lOmcuc3xwLnY6b2ZmLHMudDo1MHxzLmU6Zy5mfHAuYzojZmZmZmZmZmYscy50OjUwfHMuZTpnLnN8cC52Om9mZixzLnQ6NTF8cy5lOmcuZnxwLmM6I2ZmZmJmYmZiLHMudDo0fHAudjpvZmYscy50OjZ8cy5lOmd8cC5jOiNmZjQxYWVjOSxzLnQ6NnxzLmU6bC50LmZ8cC5jOiNmZjA2NTk3MSxzLnQ6NnxzLmU6bC50LnN8cC52OnNpbXBsaWZpZWQ!4e0!5m1!5f4.0', {
+                        maxZoom: 21,
+                        attribution: gmapsattr,
+                        id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
+                        tileSize: 256,
+                        zoomOffset: 0
+                    })
+
+                    gmapsgray = L.tileLayer('https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i{z}!2i{x}!3i{y}!4i256!2m3!1e0!2sm!3i520233372!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmU5ZTllOXxwLmw6MTcscy50OjV8cy5lOmd8cC5jOiNmZmY1ZjVmNXxwLmw6MjAscy50OjQ5fHMuZTpnLmZ8cC5jOiNmZmZmZmZmZnxwLmw6MTcscy50OjQ5fHMuZTpnLnN8cC5jOiNmZmZmZmZmZnxwLmw6Mjl8cC53OjAuMixzLnQ6NTB8cy5lOmd8cC5jOiNmZmZmZmZmZnxwLmw6MTgscy50OjUxfHMuZTpnfHAuYzojZmZmZmZmZmZ8cC5sOjE2LHMudDoyfHMuZTpnfHAuYzojZmZmNWY1ZjV8cC5sOjIxLHMudDo0MHxzLmU6Z3xwLmM6I2ZmZGVkZWRlfHAubDoyMSxzLmU6bC50LnN8cC52Om9ufHAuYzojZmZmZmZmZmZ8cC5sOjE2LHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjMzMzMzM3xwLmw6NDAscy5lOmwuaXxwLnY6b2ZmLHMudDo0fHMuZTpnfHAuYzojZmZmMmYyZjJ8cC5sOjE5LHMudDoxfHMuZTpnLmZ8cC5jOiNmZmZlZmVmZXxwLmw6MjAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZmVmZWZlfHAubDoxN3xwLnc6MS4y!4e0!5m1!5f4.0', {
                         maxZoom: 21,
                         attribution: gmapsattr,
                         id: 'user12435235124125235824592457/ckao1rqf85kh01imwyf5b0pvc',
@@ -189,8 +221,12 @@
                     var layernames = {
                         "Mapbox Normal": normal,
                         "Mapbox Streets": mdefault,
+                        "Mapbox Grayscale": mgray,
                         "Google Maps Normal": gmapsnormal,
+                        "Google Maps Normal (Better)": gmapsfb,
                         "Google Maps Bold": gmapsbold,
+                        "Google Maps Vue": gmapsvue,
+                        "Google Maps Grayscale": gmapsgray,
                         "OSM": osm,
                         "ESRI Normal": esrinormal,
                         "ESRI Terrain": esriterrain,
