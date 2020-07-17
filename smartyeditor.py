@@ -1379,6 +1379,22 @@ def main():
         if lst == []: return
         openfile(lastname)
 
+    root.bind("<Control-S>", lambda event: savefile())
+    root.bind("<Control-O>", lambda event: openfile())
+    root.bind("<Control-N>", lambda event: newfile())
+    root.bind("<Control-R>", lambda event: reopen())
+    root.bind("<Control-Alt-X>", lambda event: exportitem())
+    root.bind("<Control-Shift-X>", lambda event: exportitems())
+    root.bind("<Control-Shift-C>", lambda event: exportcsv())
+
+    root.bind("<Control-s>", lambda event: savefile())
+    root.bind("<Control-o>", lambda event: openfile())
+    root.bind("<Control-n>", lambda event: newfile())
+    root.bind("<Control-r>", lambda event: reopen())
+    root.bind("<Control-Alt-x>", lambda event: exportitem())
+    root.bind("<Control-Shift-x>", lambda event: exportitems())
+    root.bind("<Control-Shift-c>", lambda event: exportcsv())
+
     filemenu.add_command(label="New", command=newfile)
     filemenu.add_command(label="New Question", command=newquestion)
     filemenu.add_command(label="Open", command=openfile)
@@ -1405,6 +1421,18 @@ def main():
     datamenu.add_command(label="Find by Answer Backwards", command=findanswerback)
     datamenu.add_command(label="Find by Answer Backwards (case-sensitive)", command=findanswercaseback)
     datamenu.add_command(label="Goto", command=gotoquestion)
+
+    root.bind("<Control-G>", lambda event: gotoquestion())
+    root.bind("<Control-g>", lambda event: gotoquestion())
+    
+    root.bind("<Control-f>", lambda event: findquestion())
+    root.bind("<Control-Shift-F>", lambda event: findquestionback())
+
+    root.bind("<Alt-a>", lambda event: findanswer())
+    root.bind("<Shift-Alt-A>", lambda event: findanswerback())
+
+    root.bind("<Control-h>", lambda event: findhints())
+    root.bind("<Control-Shift-H>", lambda event: findhintsback())
 
     menu.add_cascade(label="File", menu=filemenu)
     menu.add_cascade(label="Data", menu=datamenu)
