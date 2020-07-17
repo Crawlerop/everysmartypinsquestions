@@ -42,19 +42,19 @@
                 <script>
                     var data = L.layerGroup()
                 
-                    m = L.marker([52.6680204, -8.630497500000047])
+                    m = L.marker([-34.88, 138.49555599999997])
                         
                     m.on('click', function(e){
-                        mymap.setView([52.6680204, -8.630497500000047], 19); 
+                        mymap.setView([-34.88, 138.49555599999997], 19); 
                     })
                         
-                    m.bindPopup("<b>Which city is Ireland's first National City of Culture in 2014?</b><br />The answer is: Limerick, Ireland<br /><br /> Hint: It has a type of poem with the same name. All of them was together synced with the LSystem. soc1.ws01.co, 0001.ws01.co<br /><br /> Standard question<br /><br /> Appears in region: en-GB<br /><br /><a href=\"https://virtualglobetrotting.com/ll/52.6680204,-8.630497500000047/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>When we turbocharge all of the CCS (aka SDX, or the TLS's ChangeCipherSpec) servers except for the Napoleon, after one park, whats the first word is the same, but the stadium. (alts: More commonly known as 'Football Park, you can guess what this (Q5112) stadium is mainly used for.)</b><br />The answer is: AAMI Stadium, West Lakes (yeah, sure Napoleon can get out of here), (^ Q5112), SA, Australia<br /><br /> Hint: Both the (QUIC) Crows and the Port (8080) Power use the oval as their home ground. If stadium == U1-C1, If park == U2-C1. This owner looks like a CTF claim. If you see by this name: The old charging station for WS01 bots until Q2 2019.<br /><br /> Standard question<br /><br /> Appears in region: en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/-34.88,138.49555599999997/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[62.0430204, 10.119502499999953], [43.2930204,10.119502499999953], [43.2930204,-27.380497500000047], [62.0430204,-27.380497500000047]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[-34.58703125, 139.15839779687497], [-35.17296875,139.15839779687497], [-35.17296875,138.26392758203122], [-34.58703125,138.26392758203122]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([52.6680204, -8.630497500000047], 17632.551208886944, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([-34.88, 138.49555599999997], 2811.7164615524616, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
-                        mymap.setView([52.6680204, -8.630497500000047], 15);
+                        mymap.setView([-34.88, 138.49555599999997], 15);
                     })
 
                     c.bindPopup("Answer range").addTo(data)
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(62.0430204, 10.119502499999953)
-                    var l2 = L.latLng(43.2930204, -27.380497500000047)
+                    var l1 = L.latLng(-34.58703125, 139.15839779687497)
+                    var l2 = L.latLng(-35.17296875, 138.26392758203122)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)

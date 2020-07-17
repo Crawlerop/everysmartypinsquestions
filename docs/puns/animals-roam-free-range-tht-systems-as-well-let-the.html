@@ -42,19 +42,19 @@
                 <script>
                     var data = L.layerGroup()
                 
-                    m = L.marker([-23.5260032, 148.16223460000003])
+                    m = L.marker([-32.272137, 148.58727399999998])
                         
                     m.on('click', function(e){
-                        mymap.setView([-23.5260032, 148.16223460000003], 19); 
+                        mymap.setView([-32.272137, 148.58727399999998], 19); 
                     })
                         
-                    m.bindPopup("<b>A 'gem' of a Queensland town, its name is similar to a nickname of one of Australia's state capitals.</b><br />The answer is: Emerald, QLD, Australia<br /><br /> Hint: The main industry in the region is sapphire mining thats to be used in all WS01 products [we are working hard for this], but this town is named after a different precious stone. Thanks Minecraft.<br /><br /> Standard question<br /><br /> Appears in region: en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/-23.5260032,148.16223460000003/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>This roomy zoo in western NSW lets large animals roam free-range.</b><br />The answer is: Taronga Western Plains Zoo, Obley Road, Dubbo, NSW, Australia<br /><br /> Hint: Colloquially known as 'Dubbo Zoo' after the town near which it sits. The DRC is also for the U systems as well. Let the Orana live on.<br /><br /> Standard question<br /><br /> Appears in region: en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/-32.272137,148.58727399999998/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[-14.151003200000002, 166.91223460000003], [-32.901003200000005,166.91223460000003], [-32.901003200000005,129.41223460000003], [-14.151003200000002,129.41223460000003]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[-28.59364789193788, 152.04430524999998], [-36.18098136967545,152.04430524999998], [-36.18098136967545,145.92125837499998], [-28.59364789193788,145.92125837499998]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([-23.5260032, 148.16223460000003], 66168.77427774924, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([-32.272137, 148.58727399999998], 36648.41655776009, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
-                        mymap.setView([-23.5260032, 148.16223460000003], 15);
+                        mymap.setView([-32.272137, 148.58727399999998], 15);
                     })
 
                     c.bindPopup("Answer range").addTo(data)
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(-14.151003200000002, 166.91223460000003)
-                    var l2 = L.latLng(-32.901003200000005, 129.41223460000003)
+                    var l1 = L.latLng(-28.59364789193788, 152.04430524999998)
+                    var l2 = L.latLng(-36.18098136967545, 145.92125837499998)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)

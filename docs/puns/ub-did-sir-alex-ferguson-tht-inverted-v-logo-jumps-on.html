@@ -42,19 +42,19 @@
                 <script>
                     var data = L.layerGroup()
                 
-                    m = L.marker([38.90723089999999, -77.03646409999999])
+                    m = L.marker([57.149717, -2.094278000000031])
                         
                     m.on('click', function(e){
-                        mymap.setView([38.90723089999999, -77.03646409999999], 19); 
+                        mymap.setView([57.149717, -2.094278000000031], 19); 
                     })
                         
-                    m.bindPopup("<b>The Game of Life is permanently enshrined in the The Smithsonian National Museum of American History in this city.</b><br />The answer is: Washington, D.C., United States<br /><br /> Hint: You might see some Senators there, maybe some Wizards, the Donald Trump, or many Congress.<br /><br /> Standard question<br /><br /> Appears in region: en-US<br /><br /><a href=\"https://virtualglobetrotting.com/ll/38.90723089999999,-77.03646409999999/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>Before managing Manchester United for over 26 years, which Scottish club did Sir Alex Ferguson manage to European and domestic success?</b><br />The answer is: Aberdeen, United Kingdom<br /><br /> Hint: This coastal city is famous for its oil industry and granite buildings. The logo for this shire is the inverted V logo jumps on circle, while the City of UWorld passes the circle to the V logo.<br /><br /> Standard question<br /><br /> Appears in region: en-GB<br /><br /><a href=\"https://virtualglobetrotting.com/ll/57.149717,-2.094278000000031/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[48.28223089999999, -58.28646409999999], [29.532230899999988,-58.28646409999999], [29.532230899999988,-95.78646409999999], [48.28223089999999,-95.78646409999999]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[66.52471700000001, 16.65572199999997], [47.774717,16.65572199999997], [47.774717,-20.84427800000003], [66.52471700000001,-20.84427800000003]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([38.90723089999999, -77.03646409999999], 23220.166515001314, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([57.149717, -2.094278000000031], 16725.506669040828, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
-                        mymap.setView([38.90723089999999, -77.03646409999999], 15);
+                        mymap.setView([57.149717, -2.094278000000031], 15);
                     })
 
                     c.bindPopup("Answer range").addTo(data)
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(48.28223089999999, -58.28646409999999)
-                    var l2 = L.latLng(29.532230899999988, -95.78646409999999)
+                    var l1 = L.latLng(66.52471700000001, 16.65572199999997)
+                    var l2 = L.latLng(47.774717, -20.84427800000003)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)

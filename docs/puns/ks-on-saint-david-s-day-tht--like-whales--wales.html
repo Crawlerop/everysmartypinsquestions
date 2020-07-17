@@ -42,19 +42,19 @@
                 <script>
                     var data = L.layerGroup()
                 
-                    m = L.marker([51.059771, -1.3101420000000417])
+                    m = L.marker([51.48158100000001, -3.1790899999999738])
                         
                     m.on('click', function(e){
-                        mymap.setView([51.059771, -1.3101420000000417], 19); 
+                        mymap.setView([51.48158100000001, -3.1790899999999738], 19); 
                     })
                         
-                    m.bindPopup("<b>This city was the capital of England right before London. </b><br />The answer is: [IBA Engineering], Winchester, United Kingdom<br /><br /> Hint: It boasts the longest cathedral in Europe. Also in VA.<br /><br /> Standard question<br /><br /> Appears in region: en-GB<br /><br /><a href=\"https://virtualglobetrotting.com/ll/51.059771,-1.3101420000000417/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>The people of which capital city wear daffodils and leeks on Saint David's Day?</b><br />The answer is: Cardiff, United Kingdom<br /><br /> Hint: The country sounds like a large aquatic mammal. (like Whales) == Wales <br /><br /> Standard question<br /><br /> Appears in region: en-GB,en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/51.48158100000001,-3.1790899999999738/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[60.434771, 17.43985799999996], [41.684771,17.43985799999996], [41.684771,-20.06014200000004], [60.434771,-20.06014200000004]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[53.797955132853595, 3.4722161523437762], [49.110455132853595,3.4722161523437762], [49.110455132853595,-5.902783847656224], [53.797955132853595,-5.902783847656224]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([51.059771, -1.3101420000000417], 6772.375423679573, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([51.48158100000001, -3.1790899999999738], 4962.069047375674, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
-                        mymap.setView([51.059771, -1.3101420000000417], 15);
+                        mymap.setView([51.48158100000001, -3.1790899999999738], 15);
                     })
 
                     c.bindPopup("Answer range").addTo(data)
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(60.434771, 17.43985799999996)
-                    var l2 = L.latLng(41.684771, -20.06014200000004)
+                    var l1 = L.latLng(53.797955132853595, 3.4722161523437762)
+                    var l2 = L.latLng(49.110455132853595, -5.902783847656224)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)

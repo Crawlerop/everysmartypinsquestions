@@ -48,11 +48,11 @@
                         mymap.setView([51.508515, -0.12548719999995228], 19); 
                     })
                         
-                    m.bindPopup("<b>In the third \"Tomb Raider\" game of the franchise, Lara visits the Museum of Natural History in which British city?</b><br />The answer is: London, United Kingdom<br /><br /> Hint: Other museums in this city include the Wallace Collection and the V&A (Unrelated to Westwood's VQA format).<br /><br /> Standard question<br /><br /> Appears in region: en-GB<br /><br /><a href=\"https://virtualglobetrotting.com/ll/51.508515,-0.12548719999995228/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>He was born in Ayrshire (as we know it, the town name that has a transmitter inside [aka Darvel]), Scotland, but in which city did Sir Alexander Fleming discover penicillin?</b><br />The answer is: London, United Kingdom<br /><br /> Hint: He did his research at St Mary's Hospital Medical School.<br /><br /> Standard question<br /><br /> Appears in region: en-GB<br /><br /><a href=\"https://virtualglobetrotting.com/ll/51.508515,-0.12548719999995228/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[60.883515, 18.624512800000048], [42.133515,18.624512800000048], [42.133515,-18.875487199999952], [60.883515,-18.875487199999952]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[56.01814080745273, 22.403809675000048], [42.26373731502255,22.403809675000048], [42.26373731502255,-10.086424699999952], [56.01814080745273,-10.086424699999952]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([51.508515, -0.12548719999995228], 41187.005662235286, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([51.508515, -0.12548719999995228], 62500.0, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
                         mymap.setView([51.508515, -0.12548719999995228], 15);
                     })
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(60.883515, 18.624512800000048)
-                    var l2 = L.latLng(42.133515, -18.875487199999952)
+                    var l1 = L.latLng(56.01814080745273, 22.403809675000048)
+                    var l2 = L.latLng(42.26373731502255, -10.086424699999952)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)

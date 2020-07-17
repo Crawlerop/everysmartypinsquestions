@@ -42,19 +42,19 @@
                 <script>
                     var data = L.layerGroup()
                 
-                    m = L.marker([55.0016152, -1.6670536999999968])
+                    m = L.marker([-35.2705915, 174.07965360000003])
                         
                     m.on('click', function(e){
-                        mymap.setView([55.0016152, -1.6670536999999968], 19); 
+                        mymap.setView([-35.2705915, 174.07965360000003], 19); 
                     })
                         
-                    m.bindPopup("<b>The residents of this city are called \"Geordies\", owing to the prevalence of the name George among them, at some time.</b><br />The answer is: Newcastle, England, United Kingdom<br /><br /> Hint: It's like bringing coals to _________.<br /><br /> Standard question<br /><br /> Appears in region: en-US<br /><br /><a href=\"https://virtualglobetrotting.com/ll/55.0016152,-1.6670536999999968/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>The historic Treaty of Waitangi was signed at ...</b><br />The answer is: Waitangi, Northland, NZ<br /><br /> Hint: Mmm hmm. But now find it. See, this is the same name. As you can see, all treaties was signed in the city of its name.<br /><br /> Standard question<br /><br /> Appears in region: en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/-35.2705915,174.07965360000003/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[58.72100712367912, 2.8446650500000032], [50.18841367268046,2.8446650500000032], [50.18841367268046,-10.880920887499997], [58.72100712367912,-10.880920887499997]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[-33.95866309643118, 179.11871210000004], [-41.959890692547916,179.11871210000004], [-41.959890692547916,172.29254422500003], [-33.95866309643118,172.29254422500003]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([55.0016152, -1.6670536999999968], 8299.65968089995, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([-35.2705915, 174.07965360000003], 41531.74124466654, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
-                        mymap.setView([55.0016152, -1.6670536999999968], 15);
+                        mymap.setView([-35.2705915, 174.07965360000003], 15);
                     })
 
                     c.bindPopup("Answer range").addTo(data)
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(58.72100712367912, 2.8446650500000032)
-                    var l2 = L.latLng(50.18841367268046, -10.880920887499997)
+                    var l1 = L.latLng(-33.95866309643118, 179.11871210000004)
+                    var l2 = L.latLng(-41.959890692547916, 172.29254422500003)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)

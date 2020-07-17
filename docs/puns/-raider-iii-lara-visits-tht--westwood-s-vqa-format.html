@@ -42,19 +42,19 @@
                 <script>
                     var data = L.layerGroup()
                 
-                    m = L.marker([40.4211798, -79.78810240000001])
+                    m = L.marker([51.508515, -0.12548719999995228])
                         
                     m.on('click', function(e){
-                        mymap.setView([40.4211798, -79.78810240000001], 19); 
+                        mymap.setView([51.508515, -0.12548719999995228], 19); 
                     })
                         
-                    m.bindPopup("<b>In 1978 this western Pennsylvania mall was swarmed by the walking dead in George Romero's \"Dawn of the Dead\".</b><br />The answer is: Monroeville, PA, United States<br /><br /> Hint: Head east from Pittsburgh.<br /><br /> Standard question<br /><br /> Appears in region: en-US<br /><br /><a href=\"https://virtualglobetrotting.com/ll/40.4211798,-79.78810240000001/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>In the third \"Tomb Raider\" game of the franchise, aka Tomb Raider III, Lara visits the Museum of Natural History in which British city?</b><br />The answer is: London, United Kingdom<br /><br /> Hint: Other museums in this city include the Wallace Collection and the V&A (Unrelated to Westwood's VQA format).<br /><br /> Standard question<br /><br /> Appears in region: en-GB<br /><br /><a href=\"https://virtualglobetrotting.com/ll/51.508515,-0.12548719999995228/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[43.08576325288181, -72.02443052500001], [38.81644854699121,-72.02443052500001], [38.81644854699121,-82.80568052499996], [43.08576325288181,-82.80568052499996]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[60.883515, 18.624512800000048], [42.133515,18.624512800000048], [42.133515,-18.875487199999952], [60.883515,-18.875487199999952]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([40.4211798, -79.78810240000001], 3959.6246759072696, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([51.508515, -0.12548719999995228], 41187.005662235286, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
-                        mymap.setView([40.4211798, -79.78810240000001], 15);
+                        mymap.setView([51.508515, -0.12548719999995228], 15);
                     })
 
                     c.bindPopup("Answer range").addTo(data)
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(43.08576325288181, -72.02443052500001)
-                    var l2 = L.latLng(38.81644854699121, -82.80568052499996)
+                    var l1 = L.latLng(60.883515, 18.624512800000048)
+                    var l2 = L.latLng(42.133515, -18.875487199999952)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)

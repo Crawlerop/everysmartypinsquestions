@@ -42,19 +42,19 @@
                 <script>
                     var data = L.layerGroup()
                 
-                    m = L.marker([-43.1618524, 147.07710599999996])
+                    m = L.marker([21.4166667, 39.81666670000004])
                         
                     m.on('click', function(e){
-                        mymap.setView([-43.1618524, 147.07710599999996], 19); 
+                        mymap.setView([21.4166667, 39.81666670000004], 19); 
                     })
                         
-                    m.bindPopup("<b>An annual folk festival is held at this Tasmanian village, south of Hobart.</b><br />The answer is: Cygnet, Huon Valley, Tasmania, Australia<br /><br /> Hint: The town's name means 'a young swan' (mentioned on Swan Simulator as it is run and synced with Nuon (it should take the south of the Tassie) [not Neuron, Neuon, Nuron, Nonce, Nuke, or Iluminati] engine (a planned game engine for CMDGFX with no eggs, and no bacons. Yeah! With it's codename: BadPeta (because of all PETA flash games showing any violence whatsoever. For example: Pokemon Black and Blue shows Pikachu is injured.))) s: thenuons.ws01.co All cycles all NUON, tba in PhoneOS, JROS, CMDGFX<br /><br /> Standard question<br /><br /> Appears in region: en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/-43.1618524,147.07710599999996/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>What Saudi Arabian city is the birthplace of Muhammad?</b><br />The answer is: Mecca, Makkah Province, Saudi Arabia<br /><br /> Hint: Inland from the Red Sea port of Jeddah, The perfect candidate for Haji.<br /><br /> Standard question<br /><br /> Appears in region: en-GB,en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/21.4166667,39.81666670000004/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[-33.7868524, 165.82710599999996], [-52.5368524,165.82710599999996], [-52.5368524,128.32710599999996], [-33.7868524,128.32710599999996]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[45.24610893509718, 79.66041670000004], [11.180755270274643,79.66041670000004], [11.180755270274643,14.738541700000042], [45.24610893509718,14.738541700000042]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([-43.1618524, 147.07710599999996], 1490.2880632105134, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([21.4166667, 39.81666670000004], 12119.44933649542, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
-                        mymap.setView([-43.1618524, 147.07710599999996], 15);
+                        mymap.setView([21.4166667, 39.81666670000004], 15);
                     })
 
                     c.bindPopup("Answer range").addTo(data)
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(-33.7868524, 165.82710599999996)
-                    var l2 = L.latLng(-52.5368524, 128.32710599999996)
+                    var l1 = L.latLng(45.24610893509718, 79.66041670000004)
+                    var l2 = L.latLng(11.180755270274643, 14.738541700000042)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)

@@ -336,6 +336,7 @@ def main():
     ''')
     
     root = tk.Tk()
+    root.wm_title("Smarty Pins Editor")
     def tick():
         root.after(1, tick)
     frmb = tk.Frame()
@@ -700,6 +701,7 @@ def main():
 
         updatelst(0)
         last = 0
+        root.wm_title(f"Smarty Pins Editor - Untitled")
         root.after(300, opendelay)
         #print(lastsave)
 
@@ -815,6 +817,7 @@ def main():
         last = 0
         lastname = fnd
 
+        root.wm_title(f"Smarty Pins Editor - {lastname}")
         root.after(300, opendelay)
 
     def exportitem():
@@ -1371,9 +1374,15 @@ def main():
             raise
         print(f"CSV exported as {fnd}")
 
+    def reopen():
+        nonlocal lastname, lst
+        if lst == []: return
+        openfile(lastname)
+
     filemenu.add_command(label="New", command=newfile)
     filemenu.add_command(label="New Question", command=newquestion)
     filemenu.add_command(label="Open", command=openfile)
+    filemenu.add_command(label="Reopen", command=reopen)
     filemenu.add_command(label="Save", command=savefile)
     filemenu.add_command(label="Save As", command=savefileas)
     filemenu.add_command(label="Export as CSV", command=exportcsv)

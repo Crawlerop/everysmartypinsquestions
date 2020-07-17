@@ -42,19 +42,19 @@
                 <script>
                     var data = L.layerGroup()
                 
-                    m = L.marker([51.48158100000001, -3.1790899999999738])
+                    m = L.marker([-23.5260032, 148.16223460000003])
                         
                     m.on('click', function(e){
-                        mymap.setView([51.48158100000001, -3.1790899999999738], 19); 
+                        mymap.setView([-23.5260032, 148.16223460000003], 19); 
                     })
                         
-                    m.bindPopup("<b>The people of which capital city wear daffodils and leeks on Saint David's Day?</b><br />The answer is: Cardiff, United Kingdom<br /><br /> Hint: The country sounds like a large aquatic mammal.<br /><br /> Standard question<br /><br /> Appears in region: en-GB,en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/51.48158100000001,-3.1790899999999738/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>A 'gem' of a Queensland town, its name is similar to a nickname of one of Australia's state capitals.</b><br />The answer is: Emerald, QLD, Australia<br /><br /> Hint: The main industry in the region is sapphire mining thats to be used in all WS01 products [we are working hard for this, because this material is hard in shaping process, but combined with metal, bumpers, plastic, military grade, It was part of UltraStrength series.], but this town is named after a different precious stone. Thanks Minecraft (as most Villagers trade x items for 1 Gem, and went even treated as a currency in CFM).<br /><br /> Standard question<br /><br /> Appears in region: en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/-23.5260032,148.16223460000003/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[53.797955132853595, 3.4722161523437762], [49.110455132853595,3.4722161523437762], [49.110455132853595,-5.902783847656224], [53.797955132853595,-5.902783847656224]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[-14.151003200000002, 166.91223460000003], [-32.901003200000005,166.91223460000003], [-32.901003200000005,129.41223460000003], [-14.151003200000002,129.41223460000003]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([51.48158100000001, -3.1790899999999738], 4962.069047375674, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([-23.5260032, 148.16223460000003], 66168.77427774924, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
-                        mymap.setView([51.48158100000001, -3.1790899999999738], 15);
+                        mymap.setView([-23.5260032, 148.16223460000003], 15);
                     })
 
                     c.bindPopup("Answer range").addTo(data)
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(53.797955132853595, 3.4722161523437762)
-                    var l2 = L.latLng(49.110455132853595, -5.902783847656224)
+                    var l1 = L.latLng(-14.151003200000002, 166.91223460000003)
+                    var l2 = L.latLng(-32.901003200000005, 129.41223460000003)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)

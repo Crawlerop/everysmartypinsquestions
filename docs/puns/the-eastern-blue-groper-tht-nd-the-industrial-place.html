@@ -42,19 +42,19 @@
                 <script>
                     var data = L.layerGroup()
                 
-                    m = L.marker([21.4166667, 39.81666670000004])
+                    m = L.marker([-33.9125436, 151.2629293])
                         
                     m.on('click', function(e){
-                        mymap.setView([21.4166667, 39.81666670000004], 19); 
+                        mymap.setView([-33.9125436, 151.2629293], 19); 
                     })
                         
-                    m.bindPopup("<b>What Saudi Arabian city is the birthplace of Muhammad?</b><br />The answer is: Mecca, Makkah Province, Saudi Arabia<br /><br /> Hint: Inland from the Red Sea port of Jeddah.<br /><br /> Standard question<br /><br /> Appears in region: en-GB,en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/21.4166667,39.81666670000004/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>The most famous resident of this Sydney suburb is Bluey the Eastern Blue Groper.</b><br />The answer is: Clovelly, NSW, Australia<br /><br /> Hint: A popular diving and snorkelling site. Adding park at the end is more likely to be a mix of MarIO[n] and the industrial place, please dont stayvacate. This suburb is part of RW LGA (aka SMG4.bin)<br /><br /> Standard question<br /><br /> Appears in region: en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/-33.9125436,151.2629293/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[45.24610893509718, 79.66041670000004], [11.180755270274643,79.66041670000004], [11.180755270274643,14.738541700000042], [45.24610893509718,14.738541700000042]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[-24.5375436, 170.0129293], [-43.2875436,170.0129293], [-43.2875436,132.5129293], [-24.5375436,132.5129293]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([21.4166667, 39.81666670000004], 12119.44933649542, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([-33.9125436, 151.2629293], 1246.969582474067, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
-                        mymap.setView([21.4166667, 39.81666670000004], 15);
+                        mymap.setView([-33.9125436, 151.2629293], 15);
                     })
 
                     c.bindPopup("Answer range").addTo(data)
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(45.24610893509718, 79.66041670000004)
-                    var l2 = L.latLng(11.180755270274643, 14.738541700000042)
+                    var l1 = L.latLng(-24.5375436, 170.0129293)
+                    var l2 = L.latLng(-43.2875436, 132.5129293)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)

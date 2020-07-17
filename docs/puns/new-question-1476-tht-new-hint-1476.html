@@ -42,19 +42,19 @@
                 <script>
                     var data = L.layerGroup()
                 
-                    m = L.marker([33.4734978, -82.01051480000001])
+                    m = L.marker([0, 0])
                         
                     m.on('click', function(e){
-                        mymap.setView([33.4734978, -82.01051480000001], 19); 
+                        mymap.setView([0, 0], 19); 
                     })
                         
-                    m.bindPopup("<b>Golf's US Masters takes place in which city every year?</b><br />The answer is: Augusta, GA, United States<br /><br /> Hint: A slight change to the eighth month of the year, or a Roman Empress.<br /><br /> Standard question<br /><br /> Appears in region: en-GB<br /><br /><a href=\"https://virtualglobetrotting.com/ll/33.4734978,-82.01051480000001/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>New Question 1476</b><br />The answer is: New Answer 1476<br /><br /> Hint: New Hint 1476<br /><br /> Standard question<br /><br /> Appears in region: en-US,en-GB,en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/0,0/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[38.2432647489652, -77.41090542500001], [29.8900657135249,-77.41090542500001], [29.8900657135249,-91.70778042499995], [38.2432647489652,-91.70778042499995]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[180.0, 180.0], [-180.0,180.0], [-180.0,-180.0], [180.0,-180.0]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([33.4734978, -82.01051480000001], 35976.2356399027, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([0, 0], 1e+45, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
-                        mymap.setView([33.4734978, -82.01051480000001], 15);
+                        mymap.setView([0, 0], 15);
                     })
 
                     c.bindPopup("Answer range").addTo(data)
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(38.2432647489652, -77.41090542500001)
-                    var l2 = L.latLng(29.8900657135249, -91.70778042499995)
+                    var l1 = L.latLng(180.0, 180.0)
+                    var l2 = L.latLng(-180.0, -180.0)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)

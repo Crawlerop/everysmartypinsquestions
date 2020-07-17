@@ -42,19 +42,19 @@
                 <script>
                     var data = L.layerGroup()
                 
-                    m = L.marker([47.6062095, -122.3320708])
+                    m = L.marker([-25.793739, 113.719472])
                         
                     m.on('click', function(e){
-                        mymap.setView([47.6062095, -122.3320708], 19); 
+                        mymap.setView([-25.793739, 113.719472], 19); 
                     })
                         
-                    m.bindPopup("<b>This city is known as \"the Birthplace of Grunge.\"</b><br />The answer is: Seattle, WA, United States<br /><br /> Hint: Nirvana, Pearl Jam, and Soundgarden originated here.<br /><br /> Standard question<br /><br /> Appears in region: en-US<br /><br /><a href=\"https://virtualglobetrotting.com/ll/47.6062095,-122.3320708/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>Friendly dolphins are probably the most famous residents of this Western Australian town.</b><br />The answer is: Monkey Mia, WA, Australia<br /><br /> Hint: Everybody in U6, WS01 Community, and the Project B Members should've been called this place DOLPHIN Mia! There is no monkeys or apes there. The only thing you can do is feed the dolphin, find a treasure and thats about it. WA Government, please fix it.<br /><br /> Standard question<br /><br /> Appears in region: en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/-25.793739,113.719472/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[55.59472292630321, -64.452432128125], [24.286826220063276,-64.452432128125], [24.286826220063276,-132.772744628125], [55.59472292630321,-132.772744628125]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[-22.01796536815284, 122.80150325], [-29.60627841981787,122.80150325], [-29.60627841981787,110.526112625], [-22.01796536815284,110.526112625]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([47.6062095, -122.3320708], 31417.594320024997, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([-25.793739, 113.719472], 6736.124676104252, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
-                        mymap.setView([47.6062095, -122.3320708], 15);
+                        mymap.setView([-25.793739, 113.719472], 15);
                     })
 
                     c.bindPopup("Answer range").addTo(data)
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(55.59472292630321, -64.452432128125)
-                    var l2 = L.latLng(24.286826220063276, -132.772744628125)
+                    var l1 = L.latLng(-22.01796536815284, 122.80150325)
+                    var l2 = L.latLng(-29.60627841981787, 110.526112625)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)

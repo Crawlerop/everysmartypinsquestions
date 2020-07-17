@@ -42,19 +42,19 @@
                 <script>
                     var data = L.layerGroup()
                 
-                    m = L.marker([-32.272137, 148.58727399999998])
+                    m = L.marker([38.90723089999999, -77.03646409999999])
                         
                     m.on('click', function(e){
-                        mymap.setView([-32.272137, 148.58727399999998], 19); 
+                        mymap.setView([38.90723089999999, -77.03646409999999], 19); 
                     })
                         
-                    m.bindPopup("<b>This roomy zoo in western NSW lets large animals roam free-range.</b><br />The answer is: Taronga Western Plains Zoo, Obley Road, Dubbo, NSW, Australia<br /><br /> Hint: Colloquially known as 'Dubbo Zoo' after the town near which it sits. The DRC is also for the U systems as well.<br /><br /> Standard question<br /><br /> Appears in region: en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/-32.272137,148.58727399999998/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>The Game of Life is permanently enshrined in the The Smithsonian National Museum of American History in this city.</b><br />The answer is: Washington, D.C., United States<br /><br /> Hint: You might see some Senators there, maybe some Wizards, the Donald Trump, or many Congress. Please check out the simulation on expressions.ws01.co<br /><br /> Standard question<br /><br /> Appears in region: en-US<br /><br /><a href=\"https://virtualglobetrotting.com/ll/38.90723089999999,-77.03646409999999/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[-28.59364789193788, 152.04430524999998], [-36.18098136967545,152.04430524999998], [-36.18098136967545,145.92125837499998], [-28.59364789193788,145.92125837499998]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[48.28223089999999, -58.28646409999999], [29.532230899999988,-58.28646409999999], [29.532230899999988,-95.78646409999999], [48.28223089999999,-95.78646409999999]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([-32.272137, 148.58727399999998], 36648.41655776009, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([38.90723089999999, -77.03646409999999], 23220.166515001314, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
-                        mymap.setView([-32.272137, 148.58727399999998], 15);
+                        mymap.setView([38.90723089999999, -77.03646409999999], 15);
                     })
 
                     c.bindPopup("Answer range").addTo(data)
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(-28.59364789193788, 152.04430524999998)
-                    var l2 = L.latLng(-36.18098136967545, 145.92125837499998)
+                    var l1 = L.latLng(48.28223089999999, -58.28646409999999)
+                    var l2 = L.latLng(29.532230899999988, -95.78646409999999)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)

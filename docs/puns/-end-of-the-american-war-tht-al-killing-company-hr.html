@@ -42,19 +42,19 @@
                 <script>
                     var data = L.layerGroup()
                 
-                    m = L.marker([-25.793739, 113.719472])
+                    m = L.marker([37.2387556, -76.50967309999999])
                         
                     m.on('click', function(e){
-                        mymap.setView([-25.793739, 113.719472], 19); 
+                        mymap.setView([37.2387556, -76.50967309999999], 19); 
                     })
                         
-                    m.bindPopup("<b>Friendly dolphins are probably the most famous residents of this Western Australian town.</b><br />The answer is: Monkey Mia, WA, Australia<br /><br /> Hint: Everybody in U6 should've been called this place DOLPHIN Mia! There is no monkeys or apes there. The only thing you can do is feed the dolphin, find a treasure and thats about it.<br /><br /> Standard question<br /><br /> Appears in region: en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/-25.793739,113.719472/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>British General Cornwallis' surrender at this Virginian fort marked the end of the American War of Independence.</b><br />The answer is: Yorktown, VA, United States<br /><br /> Hint: Near where the York river empties into the Chesapeake Bay. This county does nothing, but part of PETA [which is animal killing company] (HR) MSA.<br /><br /> Standard question<br /><br /> Appears in region: en-US<br /><br /><a href=\"https://virtualglobetrotting.com/ll/37.2387556,-76.50967309999999/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[-22.01796536815284, 122.80150325], [-29.60627841981787,122.80150325], [-29.60627841981787,110.526112625], [-22.01796536815284,110.526112625]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[49.31989770761335, -57.49600122500004], [28.145053865132486,-57.49600122500004], [28.145053865132486,-99.09390161562499], [49.31989770761335,-99.09390161562499]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([-25.793739, 113.719472], 6736.124676104252, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([37.2387556, -76.50967309999999], 7697.6300163769, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
-                        mymap.setView([-25.793739, 113.719472], 15);
+                        mymap.setView([37.2387556, -76.50967309999999], 15);
                     })
 
                     c.bindPopup("Answer range").addTo(data)
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(-22.01796536815284, 122.80150325)
-                    var l2 = L.latLng(-29.60627841981787, 110.526112625)
+                    var l1 = L.latLng(49.31989770761335, -57.49600122500004)
+                    var l2 = L.latLng(28.145053865132486, -99.09390161562499)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)
