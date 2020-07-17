@@ -48,9 +48,9 @@
                         mymap.setView([-31.9530044, 115.85746930000005], 19); 
                     })
                         
-                    m.bindPopup("<b>Thanks to me, all of the question was fetched and archived by me, since the smarty pins was down. RIP Smarty Pins (2014-2019)</b><br />The answer is: WS01 Team (DUMMY, any place would work), 1234 Five St, 0x50-0x65-0x72-0x74-0x68, 0x57-0x41<br /><br /> Hint: Files using _edit.json suffix makes the questions, hints and the answers more punny.<br /><br /> Standard question<br /><br /> Appears in region: en-US,en-GB,en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/-31.9530044,115.85746930000005/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>Thanks to me, all of the question was fetched and archived by me, since the smarty pins was down. RIP Smarty Pins (2014-2019)</b><br />The answer is: WS01 Team (DUMMY, any place would work), 1234 Five St, 0x50-0x65-0x72-0x74-0x68, 0x57-0x41<br /><br /> Hint: Files using _edit.json suffix makes the questions, hints and the answers more punny. The research however is relying on many sources such as Wikipedia (which Smarty Pins get it's source from.)<br /><br /> Standard question<br /><br /> Appears in region: en-US,en-GB,en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/-31.9530044,115.85746930000005/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[1, 1], [-1,1], [-1,-1], [1,-1]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[1.0, 1.0], [-1.0,1.0], [-1.0,-1.0], [1.0,-1.0]]).bindPopup("Region boundary").addTo(data)
 
                     c = L.circle([-31.9530044, 115.85746930000005], 1e+25, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(1, 1)
-                    var l2 = L.latLng(-1, -1)
+                    var l1 = L.latLng(1.0, 1.0)
+                    var l2 = L.latLng(-1.0, -1.0)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)

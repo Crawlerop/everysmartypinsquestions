@@ -1379,6 +1379,30 @@ def main():
         if lst == []: return
         openfile(lastname)
 
+    def dodelete():
+        nonlocal lst, frm1, last, stopped
+        if lst == []: return
+        stopped = True
+        idx = frm1.index(tk.ACTIVE)
+        rs = messagebox.askyesno("Warning", f"Question NO {idx+1} WILL BE DELETED!", icon="warning")
+        if rs:
+            tot = idx-1
+            if idx == 0: tot = 0
+            lst.pop(idx)
+            frm1.see(tot)
+            frm1.delete(idx)
+            frm1.selection_clear(0, tk.END)
+            frm1.selection_set(tot)
+            frm1.event_generate("<<ListboxSelect>>")
+            frm1.activate(tot)
+            last = -1
+            updatelst(tot)
+            last = tot
+            
+        root.after(300, doupdate)
+
+        
+
     root.bind("<Control-S>", lambda event: savefile())
     root.bind("<Control-O>", lambda event: openfile())
     root.bind("<Control-N>", lambda event: newfile())
@@ -1390,6 +1414,7 @@ def main():
     root.bind("<Control-s>", lambda event: savefile())
     root.bind("<Control-o>", lambda event: openfile())
     root.bind("<Control-n>", lambda event: newfile())
+    root.bind("<Alt-n>", lambda event: newquestion())
     root.bind("<Control-r>", lambda event: reopen())
     root.bind("<Control-Alt-x>", lambda event: exportitem())
     root.bind("<Control-Shift-x>", lambda event: exportitems())
@@ -1408,6 +1433,8 @@ def main():
     root.protocol("WM_DELETE_WINDOW", doquit)
 
     datamenu = tk.Menu(menu, tearoff=0)
+
+    datamenu.add_command(label="Delete", command=dodelete)
     datamenu.add_command(label="Find", command=findquestion)
     datamenu.add_command(label="Find (case-sensitive)", command=findquestioncase)
     datamenu.add_command(label="Find Backwards", command=findquestionback)
@@ -1421,6 +1448,8 @@ def main():
     datamenu.add_command(label="Find by Answer Backwards", command=findanswerback)
     datamenu.add_command(label="Find by Answer Backwards (case-sensitive)", command=findanswercaseback)
     datamenu.add_command(label="Goto", command=gotoquestion)
+
+    root.bind("<Control-Delete>", lambda event: dodelete())
 
     root.bind("<Control-G>", lambda event: gotoquestion())
     root.bind("<Control-g>", lambda event: gotoquestion())
