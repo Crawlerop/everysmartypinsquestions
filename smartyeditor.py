@@ -2,7 +2,7 @@
 # https://api.mapbox.com/styles/v1/user12435235124125235824592457/ckaksz0ab1wbf1iqvfbm1g0l8/tiles/256/0/0/0@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw
 
 import tkinter as tk
-from tkinter import ttk, messagebox, filedialog, simpledialog
+from tkinter import ttk, messagebox, filedialog, simpledialog, dialog
 import staticmap
 import json
 from PIL import Image, ImageTk
@@ -1449,6 +1449,13 @@ def main():
     datamenu.add_command(label="Find by Answer Backwards (case-sensitive)", command=findanswercaseback)
     datamenu.add_command(label="Goto", command=gotoquestion)
 
+    helpmenu = tk.Menu(menu, tearoff=0)
+
+    def aboutMenu():
+        simpledialog.SimpleDialog(root, text="Smarty Pins Editor\nVersion 0.1, 2020 WS01.", title="Smarty Pins Editor", buttons=["OK"]).go()
+
+    helpmenu.add_command(label="About", command=aboutMenu)
+
     root.bind("<Control-Delete>", lambda event: dodelete())
 
     root.bind("<Control-G>", lambda event: gotoquestion())
@@ -1465,6 +1472,7 @@ def main():
 
     menu.add_cascade(label="File", menu=filemenu)
     menu.add_cascade(label="Data", menu=datamenu)
+    menu.add_cascade(label="Help", menu=helpmenu)
 
     root.config(menu=menu)
     if len(sys.argv) >= 2:
