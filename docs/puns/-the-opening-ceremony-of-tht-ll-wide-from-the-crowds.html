@@ -42,19 +42,19 @@
                 <script>
                     var data = L.layerGroup()
                 
-                    m = L.marker([55.0016152, -1.6670536999999968])
+                    m = L.marker([41.8781136, -87.62979819999998])
                         
                     m.on('click', function(e){
-                        mymap.setView([55.0016152, -1.6670536999999968], 19); 
+                        mymap.setView([41.8781136, -87.62979819999998], 19); 
                     })
                         
-                    m.bindPopup("<b>Popular UK reality show 'Geordie Shore' is based in which British city?</b><br />The answer is: Newcastle, United Kingdom<br /><br /> Hint: It's where Geordies come from!<br /><br /> Standard question<br /><br /> Appears in region: en-US<br /><br /><a href=\"https://virtualglobetrotting.com/ll/55.0016152,-1.6670536999999968/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>In which city did Diana Ross famously miss a penalty at the opening ceremony of the 1994 FIFA World Cup? </b><br />The answer is: Chicago, IL, United States<br /><br /> Hint: The wind in this city must have taken the ball wide from the crowds.<br /><br /> Standard question<br /><br /> Appears in region: en-GB<br /><br /><a href=\"https://virtualglobetrotting.com/ll/41.8781136,-87.62979819999998/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[63.11529993715533, 35.8329463], [36.2516152,35.8329463], [36.2516152,-39.1670537], [63.11529993715533,-39.1670537]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[51.2531136, -68.87979819999998], [32.5031136,-68.87979819999998], [32.5031136,-106.37979819999998], [51.2531136,-106.37979819999998]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([55.0016152, -1.6670536999999968], 16555.433224939963, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([41.8781136, -87.62979819999998], 16717.667481676406, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
-                        mymap.setView([55.0016152, -1.6670536999999968], 15);
+                        mymap.setView([41.8781136, -87.62979819999998], 15);
                     })
 
                     c.bindPopup("Answer range").addTo(data)
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(63.11529993715533, 35.8329463)
-                    var l2 = L.latLng(36.2516152, -39.1670537)
+                    var l1 = L.latLng(51.2531136, -68.87979819999998)
+                    var l2 = L.latLng(32.5031136, -106.37979819999998)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)

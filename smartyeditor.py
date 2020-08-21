@@ -645,7 +645,7 @@ def main():
         frm1.delete(0, tk.END)
         last = -1
         lst.append({
-            "id":random.randint(100000000000000,1000000000000000),
+            "id":random.randint(1,1000000000000000-1),
             "published":datetime.datetime.now().replace(microsecond=0).isoformat() + "Z",
             "locales":[
                 "en-US",
@@ -709,7 +709,7 @@ def main():
         nonlocal lst, frm1
         if lst == []: return
         lst.append({
-            "id":random.randint(100000000000000,1000000000000000),
+            "id":random.randint(1,1000000000000000-1),
             "published":datetime.datetime.now().replace(microsecond=0).isoformat() + "Z",
             "locales":[
                 "en-US",

@@ -42,19 +42,19 @@
                 <script>
                     var data = L.layerGroup()
                 
-                    m = L.marker([-42.8819032, 147.32381480000004])
+                    m = L.marker([52.56949849999999, -0.2405298999999559])
                         
                     m.on('click', function(e){
-                        mymap.setView([-42.8819032, 147.32381480000004], 19); 
+                        mymap.setView([52.56949849999999, -0.2405298999999559], 19); 
                     })
                         
-                    m.bindPopup("<b>Cascade Brewery is Australia's oldest. It is in this Tasmanian city.</b><br />The answer is: BTF Redestroyed Unextended version 1.6.2.3.6.23.1.26.2.6.32.1.6.2, Windows codename HPXY or Hobart, Tasmania, Australia<br /><br /> Hint: It's label feature an extinct Australian mammal which is a symbol for its home state. Every startup animation in future versions of the Phone OS uses ZTE TRACFONE (or Net10) Sound and the ideas animation. The lightbulb icon was used in DM's Revelation Extended.<br /><br /> Standard question<br /><br /> Appears in region: en-US<br /><br /><a href=\"https://virtualglobetrotting.com/ll/-42.8819032,147.32381480000004/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>The East of England Showground, used for livestock and agriculture shows,\xa0is close to which Cambridgeshire city?  </b><br />The answer is: Peterborough, United Kingdom<br /><br /> Hint: Whilst the showground is to the west, Bronze age archaeological site Flag Fen is to the east of this city. ILiveHereUK is now a part of this city hatedom.<br /><br /> Standard question<br /><br /> Appears in region: en-GB,en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/52.56949849999999,-0.2405298999999559/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[-37.045675489182955, 154.38436167500004], [-43.68880509236768,154.38436167500004], [-43.68880509236768,141.99910776875004], [-37.045675489182955,141.99910776875004]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[54.51076754134944, 5.586801642968794], [49.82326754134944,5.586801642968794], [49.82326754134944,-3.788198357031206], [54.51076754134944,-3.788198357031206]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([-42.8819032, 147.32381480000004], 357.0944763999294, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([52.56949849999999, -0.2405298999999559], 2918.655153169674, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
-                        mymap.setView([-42.8819032, 147.32381480000004], 15);
+                        mymap.setView([52.56949849999999, -0.2405298999999559], 15);
                     })
 
                     c.bindPopup("Answer range").addTo(data)
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(-37.045675489182955, 154.38436167500004)
-                    var l2 = L.latLng(-43.68880509236768, 141.99910776875004)
+                    var l1 = L.latLng(54.51076754134944, 5.586801642968794)
+                    var l2 = L.latLng(49.82326754134944, -3.788198357031206)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)

@@ -42,19 +42,19 @@
                 <script>
                     var data = L.layerGroup()
                 
-                    m = L.marker([35.0116363, 135.76802939999993])
+                    m = L.marker([-41.2864603, 174.77623600000004])
                         
                     m.on('click', function(e){
-                        mymap.setView([35.0116363, 135.76802939999993], 19); 
+                        mymap.setView([-41.2864603, 174.77623600000004], 19); 
                     })
                         
-                    m.bindPopup("<b>In which ancient Japanese city might you find a museum dedicated to Manga comic books?</b><br />The answer is: Kyoto, Kyoto Prefecture, Japan<br /><br /> Hint: Rearrange the letters of this city's name and you'll get another Japanese city.<br /><br /> Standard question<br /><br /> Appears in region: en-GB,en-AU<br /><br /><a href=\"https://virtualglobetrotting.com/ll/35.0116363,135.76802939999993/\">Look on VirtualGlobeTrotting</a>").addTo(data)
+                    m.bindPopup("<b>Located on the North Island, what is the capital of New Zealand?</b><br />The answer is: Wellington, New Zealand<br /><br /> Hint: It shares its name with some wet weather footwear. See: The meaning of NZ capital region.<br /><br /> Standard question<br /><br /> Appears in region: en-GB<br /><br /><a href=\"https://virtualglobetrotting.com/ll/-41.2864603,174.77623600000004/\">Look on VirtualGlobeTrotting</a>").addTo(data)
                         
-                    L.polygon([[53.31770290298895, 167.52584189999993], [25.6366363,167.52584189999993], [25.6366363,110.33834189999993], [53.31770290298895,110.33834189999993]]).bindPopup("Region boundary").addTo(data)
+                    L.polygon([[-34.55755375491655, -178.51478162499996], [-47.43717513352835,-178.51478162499996], [-47.43717513352835,164.37584537500004], [-34.55755375491655,164.37584537500004]]).bindPopup("Region boundary").addTo(data)
 
-                    c = L.circle([35.0116363, 135.76802939999993], 10913.896518316418, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
+                    c = L.circle([-41.2864603, 174.77623600000004], 19552.95126103135, {color: 'green', fillColor: '#0f0', fillOpacity: 0.3})
                     c.on('click', function(e){
-                        mymap.setView([35.0116363, 135.76802939999993], 15);
+                        mymap.setView([-41.2864603, 174.77623600000004], 15);
                     })
 
                     c.bindPopup("Answer range").addTo(data)
@@ -211,8 +211,8 @@
                         layers: [normal, data]
                     })
 
-                    var l1 = L.latLng(53.31770290298895, 167.52584189999993)
-                    var l2 = L.latLng(25.6366363, 110.33834189999993)
+                    var l1 = L.latLng(-34.55755375491655, -178.51478162499996)
+                    var l2 = L.latLng(-47.43717513352835, 164.37584537500004)
                     bounds = L.latLngBounds(l1, l2)
                     mymap.panTo(bounds.getCenter())
                     mymap.fitBounds(bounds)
