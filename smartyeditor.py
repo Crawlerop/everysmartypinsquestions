@@ -1,6 +1,8 @@
 # https://github.com/komoot/staticmap
 # https://api.mapbox.com/styles/v1/user12435235124125235824592457/ckaksz0ab1wbf1iqvfbm1g0l8/tiles/256/0/0/0@2x?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw
 
+# for deps: pip install staticmap, pillow
+
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog, simpledialog, dialog
 import staticmap
