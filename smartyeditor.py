@@ -863,7 +863,7 @@ def main():
         output = output.replace("([SWLAT])", str(swlat))
         output = output.replace("([SWLNG])", str(swlng))
         output = output.replace("([MINDIST])", str(radius))
-        open(fnd, "w").write(output)
+        open(fnd, "w", encoding="utf-8").write(output)
 
     allowed = []
     for r in range(ord("a"), ord("z")+1):
@@ -938,8 +938,8 @@ def main():
                 '''
 
 
-                open(fnd+"/"+"questionmaps.txt", "a+").write(str(isd)+"\n\n"+"".join(iout) + " -> " + json.dumps(item) + "\n\n")
-                open(fnd+"/"+"".join(iout)+".html", "w").write(output)
+                open(fnd+"/"+"questionmaps.txt", "a+", encoding="utf-8").write(str(isd)+"\n\n"+"".join(iout) + " -> " + json.dumps(item) + "\n\n")
+                open(fnd+"/"+"".join(iout)+".html", "w", encoding="utf-8").write(output)
                 isd += 1
             except Exception as e:
                 #print(a)
