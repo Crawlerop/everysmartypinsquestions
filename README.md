@@ -26,3 +26,44 @@ The pre-NH version has a location misalignment on the preview screen. | Eventhro
 When zooming in and out, location misalignment got even worse. | It's better, but not perfect. Atleast there is aurelia now!
 ![Rename Wrong](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/renamewrong.gif)  |  ![Rename Correct](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/renamecorrect.gif)
 Do you think that saving and reloading the file after editing the question title is a chore? | Now, it's fixed. The item name syncs when the question title was changed.
+
+# Features
+
+### Easily Edit Smarty Pins Questions
+
+![File Loaded](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/feat1.png)
+
+Finally, with Smarty Pins Editor, you can easily create better Smarty Pins Quiz for everyone.
+
+### Tons of Search Features
+
+![SearchBar](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/feat2.png)
+
+With many search features, you can easily find anything by questions, hints, and answer.
+
+### The Debugging, is easy for everyone!
+
+![HTMLOut](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/feat3.png)
+
+With HTML output feature out of the box, You can easily export to html to check boundings for Smarty Pins  
+So you never had to mess up with region to make question easier.
+
+Here are some example output with HTML, produced with this editor.
+
+![MapsOut](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/maps1.png)
+
+![PinOpen](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/maps2.png)
+
+![Style1](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/maps3.png)
+
+![Style2](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/maps4.png)
+
+![Style3](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/maps5.png)
+
+# Wiki
+
+Yes, we have a wiki. Please click [here](https://github.com/Crawlerop/everysmartypinsquestions/wiki).
+
+
+
+
