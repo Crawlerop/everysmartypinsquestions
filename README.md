@@ -23,3 +23,5 @@ Before            |  After
 The pre-NH version has a location misalignment on the preview screen. | The preview works as expected!
 ![Wrong 2](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/wrong2.png)  |  ![Correct 2](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/correct2.png)
 When zooming in and out, location misalignment got even worse. | It's better, but atleast there is aurelia now!
+![Rename Wrong](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/renamewring.gif)  |  ![Rename Correct](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/renamecorrect.gif)
+Do you think that saving and reloading the file after editing the question title is a chore? | Thank's, it saved a lot of time when editing the questions title.

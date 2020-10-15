@@ -556,6 +556,14 @@ def main():
             lst[frm1.index(tk.ACTIVE)]["answer"]["location"]["lng"] = float(lng)
             lst[frm1.index(tk.ACTIVE)]["title"] = question.get()
             #s = lst[frm1.index(tk.ACTIVE)]["slug"]
+            lact = frm1.index(tk.ACTIVE)
+            if question.get() != frm1.get(lact):
+                # print(f"{question.get()} != {frm1.get(lact)}")
+                frm1.delete(lact)
+                frm1.insert(lact, question.get())
+                # frm1.selection_set(lact)
+                frm1.activate(lact)
+                frm1.selection_set(lact)
             chtxt = "-".join(question.get().split()[:6]).lower().replace("'", "-")
             chout = ""
             for cht in chtxt:
@@ -603,15 +611,17 @@ def main():
         if lst == []: return False
         if not lastname:
             fnd = tk.filedialog.asksaveasfilename(title="Save Smarty Pins question file.", filetypes=(("Smarty Pins JSON file", "*.json"),))
+            lastname = fnd
         else:
             fnd = lastname
         if not fnd: return False
         try:
-            open(fnd, "w").write(json.dumps({"items": lst, "count": len(lst)}))
+            open(fnd, "w", encoding="utf-8").write(json.dumps({"items": lst, "count": len(lst)}, indent=3))
         except:
             messagebox.showerror(message=f"Cannot write {fnd}")
             return False
         lastsave.prev = copy.deepcopy({"a": lst})
+        root.wm_title(f"Smarty Pins Editor - {lastname}")
         return True
 
     def savefileas():
@@ -620,12 +630,13 @@ def main():
         fnd = tk.filedialog.asksaveasfilename(title="Save Smarty Pins question file.", filetypes=(("Smarty Pins JSON file", "*.json"),))
         if not fnd: return False
         try:
-            open(fnd, "w").write(json.dumps({"items": lst, "count": len(lst)}))
+            open(fnd, "w", encoding="utf-8").write(json.dumps({"items": lst, "count": len(lst)}, indent=3))
         except:
             messagebox.showerror(message=f"Cannot write {fnd}")
             return False
         lastsave.prev = copy.deepcopy({"a": lst})
         lastname = fnd
+        root.wm_title(f"Smarty Pins Editor - {lastname}")
         return True
 
     def checksave():
@@ -786,7 +797,7 @@ def main():
         lst = []
         lastsave.prev = None
         try:
-            dta = json.loads(open(fnd, "r").read())
+            dta = json.loads(open(fnd, "r", encoding="utf-8").read())
         except:
             messagebox.showerror(message=f"Cannot load {fnd}")
             root.after(300, opendelay)
@@ -1370,7 +1381,7 @@ def main():
         fnd = tk.filedialog.asksaveasfilename(title="Save Smarty Pins CSV file.", filetypes=(("CSV sheet", "*.csv"),))
         if not fnd: return
         try:
-            data = open(fnd, "w")
+            data = open(fnd, "w", encoding="utf-8")
             fields = ['answer_name', 'counts', 'indexlist']
             writer = csv.DictWriter(data, fieldnames=fields)
             cnt = 0
