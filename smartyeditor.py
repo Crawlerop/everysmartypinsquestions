@@ -1481,7 +1481,7 @@ def main():
     helpmenu = tk.Menu(menu, tearoff=0)
 
     def aboutMenu():
-        simpledialog.SimpleDialog(root, text="Smarty Pins Editor\nVersion 0.1, 2020 WS01.", title="Smarty Pins Editor", buttons=["OK"]).go()
+        simpledialog.SimpleDialog(root, text="Smarty Pins Editor\nVersion 1.0, 2020 WS01.", title="Smarty Pins Editor", buttons=["OK"]).go()
 
     helpmenu.add_command(label="About", command=aboutMenu)
 
