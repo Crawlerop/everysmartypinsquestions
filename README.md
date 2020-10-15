@@ -21,7 +21,7 @@ It also fixes many problems, such as Save button not changing window title, Wind
 Before            |  After
 :----------------:|:-------------------------:
 ![Wrong 1](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/wrong1.png)  |  ![Correct 1](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/correct1.png)
-The pre-NH version has a location misalignment on the preview screen. | Eventrough the pin itself is little bit misaligned, the preview works as expected!
+The pre-NH version has a location misalignment on the preview screen. | Eventhrough the pin itself is little bit misaligned, the preview works as expected!
 ![Wrong 2](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/wrong2.png)  |  ![Correct 2](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/correct2.png)
 When zooming in and out, location misalignment got even worse. | It's better, but not perfect. Atleast there is aurelia now!
 ![Rename Wrong](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/renamewrong.gif)  |  ![Rename Correct](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/renamecorrect.gif)
