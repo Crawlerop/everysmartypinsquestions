@@ -13,7 +13,8 @@ If you want all the pre-exported HTML question database, please click [here](htt
 # Why New Heights?
 
 Because the master repo is a release repo, while the New Heights was a developement repo.  
-The New Heights version no longer uses StaticMaps module as MapBox has a StaticMap API, which fixes many pin alignment issues in this editor.
+The New Heights version no longer uses StaticMaps module as MapBox has a StaticMap API, which fixes many pin alignment issues in this editor.  
+It also fixes many problems, such as Save button not changing window title, Windows not saving some json files, and the most annoyingly, question title not updating the listbox.
 
 # Comparision
 
