@@ -22,6 +22,6 @@ Before            |  After
 ![Wrong 1](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/wrong1.png)  |  ![Correct 1](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/correct1.png)
 The pre-NH version has a location misalignment on the preview screen. | Eventrough the pin itself is little bit misaligned, the preview works as expected!
 ![Wrong 2](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/wrong2.png)  |  ![Correct 2](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/correct2.png)
-When zooming in and out, location misalignment got even worse. | It's better, but not perfect. But atleast there is aurelia now!
+When zooming in and out, location misalignment got even worse. | It's better, but not perfect. Atleast there is aurelia now!
 ![Rename Wrong](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/renamewrong.gif)  |  ![Rename Correct](https://raw.githubusercontent.com/Crawlerop/everysmartypinsquestions/newheights/imgs/renamecorrect.gif)
-Do you think that saving and reloading the file after editing the question title is a chore? | Now, it's fixed. The item name also change when the question title was changed.
+Do you think that saving and reloading the file after editing the question title is a chore? | Now, it's fixed. The item name syncs when question title was changed.
